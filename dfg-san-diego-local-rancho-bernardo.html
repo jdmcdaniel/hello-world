@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/dfg-flower.png"/>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/style.css"            rel="stylesheet" type="text/css" />
+<link href="css/iframe.css"           rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-4.3.1.css"  rel="stylesheet" type="text/css" />
+
+<link href="css/rb-local-rancho-bernardo.css"         rel="stylesheet" type="text/css" />
+
+<!-- <link href="myjsjwt/a-cssjs.css"  rel="stylesheet" type="text/css" /> -->
+
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+
+<script src="http://use.edgefonts.net/baumans:n4:default.js" type="text/javascript"></script>
+
+
+
+<meta name="description" content="Rancho Bernardo Local Community Participation in Days For Girls Activities">
+<meta name="keywords" content="San-Diego North County Community-Participation, Days-For-Girls, DfG-Volunteer Participation-Events Donate ">
+	
+<meta name="geo.placename" content="Days For Girls, 11111 Rancho Bernardo Rd, San Diego CA, 92127, USA"/>  
+<meta name="geo.region"   content="US-California"/>	
+<meta name="geo.position" content="33.023228,-117.089529"/>
+<meta name="ICBM"         content="33.023228,-117.089529"/>
+
+<title>DfG Rancho Bernardo | Other </title>
+	
+</head>
+<body>
+
+	<header>
+	<section>
+	<div itemscope itemtype="http://schema.org/LocalBusiness">
+	<h1 id="home-logo" itemprop="name">Days For Girls, San Diego North County, <br><em><u>Rancho Bernardo</u></em></h1>
+	</div>
+	
+	<section style="float: left;">
+		<a href="https://www.daysforgirls.org/" target="_blank">
+		<img src="images/dgf-top-logo.png" alt="Logo, Days For Girls, Small Flower Pattern" width="240" height="115"  class="Branding Flower box-shadow">
+		</a> 
+	</section>
+		
+		<!-- box-shadow: 2px 2px 13px #000; was rb-logo7 -->
+	<section id="rb-logo" style="float: right; margin-right: 30px; ">
+	
+	<img src="images/rancho-bernardo-logo4.jpg" alt="Logo, Days For Girls, Rancho Bernardo Stamp" width="125" height="130" class="Branding RB" > 
+	
+	</section>
+	
+	<div itemscope itemtype="http://schema.org/PostalAddress">
+	
+	<p><span itemprop="streetAddress">11111 Rancho Bernardo Rd</span><br>
+	<span itemprop="addressLocality">San Diego</span>
+	<span itemprop="addressRegion">CA</span>
+	<span itemprop="postalCode">92127</span><br>
+	Call: <a href="tel://7607441150" 
+	itemprop="telephone"> 760-744-1150</a>
+	&nbsp;Or: <a href="sms://7607441150">...Text<br></a>
+	<!--  U+1F5E9 texting symbols -->
+	
+	Email: <a href="mailto:rene-mcdaniel@dfg-rancho-bernardo.com?bcc=emailbcc@dfg-rancho-bernardo.com?subject=Making%20Contact&body=Hi%20Rene,%20I'm%20interested%20in:" 
+	itemprop="email">rene-mcdaniel@dfg-rancho-bernardo.com</a> </p>
+	<p style="font-size: 0.10em;">
+	&nbsp;</p>	
+	</div>
+	
+	</section>
+	
+	<section>
+		
+		<h2-dfg><em><strong>" Turning Periods Into Pathways "</strong></em></h2-dfg>
+	
+	<!-- dfg-int'l color-23:= F19622, ours=f89607  -->	
+	
+	</section>
+	</header>
+	
+	<!-- Qualifying the user, not novice; then expose more, count visits by document ready function (similar to onLoad), use localStorage to save intermediate results across multiple pages and multiple visits. Only install this ready count on the top/first-5 menu items pages. count is used for when to expose front-anchors. this count is per user/device as the data is storage locally on their device -->
+	<script>
+		"use strict";
+		$(document).ready(function() {
+			if (isNaN(localStorage.userRevisits) ) 
+		        { //Takes care of the case where userRevisits NaN
+				    localStorage.userRevisits = 0;
+				    }
+		if (localStorage.userVisits)
+				{ 
+				localStorage.userVisits = parseInt(localStorage.userVisits) + 1;
+				}
+		else
+				{
+				localStorage.userVisits = 1;
+				localStorage.userRevisits = 0;
+				}
+		if (sessionStorage.userVisits)
+				{ 
+				sessionStorage.userVisits = parseInt(sessionStorage.userVisits) + 1;
+				}
+		else
+				{
+				sessionStorage.userVisits = 1;
+				localStorage.userRevisits = parseInt(localStorage.userRevisits) + 1 ;
+				}
+		} );
+		</script>
+	
+	<section id="front-anchors">
+		<a name="jump2info" style="margin-top: -3px;"></a>
+	
+	<ax1></ax1> <!-- placeholder to be filled in by script -->
+	
+	<!-- Since document ready occurs at the load end, this condition won't trigger until the 10th entry, 1 delay for being at the end, 1 delay waiting for next repaint to occur, and 1 for subtracting the 1st session count; ie visits=10, revisits=9 -->
+	<script>
+	"use strict";
+	if (   localStorage.getItem("subscribed") == "checked" ||  localStorage.getItem("signedUp") == "checked" || (parseInt(localStorage.getItem("userRevisits") ) >= "8"  ) ) 
+	 {
+		var a = `<a>	 
+	<!-- Location Map -->
+		<a href="dfg-rb-map-view.html#jump2map"><strong><em>DfG RB Map</em></strong></a>&nbsp;&nbsp;
+	<!-- Calendar -->
+		<a href="dfg-rb-calendar-actual.html#jump2calendar"><strong><em>RB Calendar</em></strong></a>&nbsp;&nbsp;
+	<!-- Info -->
+		<a href="dfg-rb-local.html#jump2info"><strong><em><u>RB Info</u></em></strong></a>&nbsp;&nbsp;
+	
+		<!-- RB Contacts, conditional based on sign up and cookies -->
+		<p1 style= "font-size: 1.4em;">  <br></p1>
+		
+		<\a>`;
+	$('ax1').append(a);
+	 }
+	</script>
+	<!-- placeholder to be filled in by script below; check, then; expose restricted page link for the members who signed up/subscribed -->
+		<axx></axx>
+		<script>
+		"use strict";
+		if (localStorage.getItem("subscribed") == "checked" ||  localStorage.getItem("signedUp") == "checked" )
+		{
+		var a = `<a>
+		<a href="dfg-rb-group-info.html#jump2group-info"><strong><em>Group-Info&nbsp;&nbsp;&nbsp;&nbsp;</em></strong></a>
+		
+		<\a>`;
+		$('axx').append(a);
+		}
+		</script>
+	
+	
+	
+	<!-- from above; first visit; equals else equals show nothing for front-anchors -->
+	</section>
+	
+	<div-tabs class="nav-tabs bkgbreadcrumb">
+	
+		 <a href="dfg-rb-index.html"          ><em><u>Home</u></em></a>
+		 <a href="dfg-rb-sign-up.html"        >Join</a>	
+		 <a href="dfg-rb-stories.html"        >Stories</a>
+		 <a href="dfg-rb-share.html"          >Share</a>
+		 <a href="dfg-rb-newsletter.html"     >News</a>
+		 
+	</div-tabs>	
+				
+
+<div class="responsive-inline-frame">
+  <div class="responsive-inline-frame-inner">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53525.09826909323!2d-117.07346449194337!3d33.021734693068936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf7282301a4ed%3A0x909db66f113422e2!2s11111%20Rancho%20Bernardo%20Rd%2C%20San%20Diego%2C%20CA%2092127!5e0!3m2!1sen!2sus!4v1574214198737!5m2!1sen!2sus" width="320" height="320" frameborder="1" style="border:0;" allowfullscreen=""> </iframe>	  
+  </div>
+</div>
+
+<h1>Rancho Bernardo DfG Local Community </h1>
+
+
+<div class="mapouter">
+  <div class="gmap_canvas">
+  <iframe width="320" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=11111%20Rancho%20Bernardo%20Rd%2C%20San%20Diego%20CA%2C%2092127%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </div>
+  <style>.mapouter{position:relative;text-align:right;height:320px;width:320px;}.gmap_canvas {overflow:hidden;background:none!important;height:320px;width:320px;}
+  </style>
+</div>
+
+
+<nav id="mainNav"><ul>
+<li><a href="dgf-ghana-works.html">DfG In Africa<a/></li>
+<li><a href="dgf-san-diego-local-community.html">	DfG Local Community<a/></li>
+<li><a href="dgf-education-impact.html">DfG Ghana Education<a/></li>
+<li><a href="dgf-intl-summary.html">Days For Girls Int'l<a/></li>
+<li><a href="dgf-dignity.html">Dignity<a/></li>
+<li><a href="dgf-rancho-bernardo-calendars.html">	DfG RB Calendar<a/></li>
+</ul>
+</nav>
+<h2>What About this Trendy Cause?</h2>
+	<p> Days for Girls began as a volunteer-run organization. What began in November 2008 as a small yet passionate group of women (and some men!) has rapidly grown into a robust network of more than 50,000 volunteers around the globe.
+
+
+
+Our volunteers are organized into Chapters, Teams, or Clubs.
+
+
+
+Chapters and Teams consist of volunteers who gather together, or work independently, to promote our mission in many ways. Most sew and assemble the DfG Kits, focusing on either complete DfG Kits or specific components. All groups start as a Team and can apply to become a Chapter after meeting certain milestones. Groups range in size from one to hundreds! No matter what aspect of the Days for Girls mission a group focuses on, they are all vital and important to our movement.</p>
+	<h2>A NEW Chapter is opening in San Diego North County, Rancho Bernardo; Supporting Ghana.</h2>
+
+<img src="images/Days-For-Girls-Ghana-via-Rancho-Bernardo.png" alt="Photo, San Diego North County, Rancho Bernardo ... Days For Girls in Ghana"> 
+
+<p>Communities all across the US are binding together to help a unknown problem gain traction.  They're helping Girls stay in School. They're helping Girls Education.  They're helping lives improve. <br>
+.......But How? .. By stepping up, stepping out to make a difference, To Improve a Girl's Life.  </p>
+<section id="body-text-tag">
+	<h2>You too, Can volunteer, You too, Can make a difference.</h2>
+	<p style="margin-left: 30px; margin-right: 30px;"><strong>Take the step, connect today: &nbsp;</strong>
+	<a href="dfg-rb-sign-up.html"><strong><em>RB Sign-Up</em></strong></a>&nbsp;&nbsp; OR:&nbsp;&nbsp;<a href="mailto://:rene-mcdaniel@dfg-rancho-bernardo.com"><strong><em>email:&nbsp;rene-mcdaniel@dfg-rancho-bernardo.com</em></strong></a></p>
+	</section>
+	</div>
+	
+	<section id="bottom-banner2">
+		<p class="backgroundcolor1"> <strong><em>Support Days For Girls</em></strong></p>
+	</section>
+		
+	<section id="bottom-banner">
+		<p class="backgroundcolor2" style="width: 34.8%"><strong><em>Every Girl, Everywhere, <br>Period.</em></strong></p>
+		<p class="backgroundcolor3" style="width: 32.1%"><img src="images/dfg-flower-sm-logo.png" alt="Logo, Days For Girls, Small Flower" width="38" height="29">MAKE AN IMPACT<br> <strong><em>Join In!</em></strong></p>
+		
+		<p class="backgroundcolor2" style="width: 33.1%"><strong><em>Turning Periods Into</em></strong><br><strong><em>Pathways</em></strong></p>
+	</section>
+		
+				
+	<footer>
+		<p>Copyright © 2020  <!-- <a href="https://dfg-rancho-bernardo.com"> --><a href="dfg-rb-index.html"><strong><em>Days For Girls, Rancho Bernardo, Ca 92127</em></strong></a>&nbsp;&nbsp;<a href="mailto://:rene-mcdaniel@dfg-rancho-bernardo.com"><strong><em>email:&nbsp;rene-mcdaniel@dfg-rancho-bernardo.com</em></strong></a></p>
+	<p><strong><em>Share Us on:</em></strong> 	
+		
+	<!-- Basic Share Links -->
+	<!-- Twitter (url, text, @mention) -->
+	<a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>">Twitter
+	</a>&nbsp;
+	
+	<!-- Facebook (url) -->
+	<a href="https://www.facebook.com/sharer/sharer.php?u=<URL>">
+			Facebook
+	</a>&nbsp;
+	
+	<!-- Instagram (subject, body) -->
+	<a href="https://www.facebook.com/sharer/sharer.php?u=<URL>">
+			Instagram
+	</a>&nbsp;	
+		
+	<!-- Email (subject, body) -->
+	<a href="mailto:?subject=<SUBJECT>&body=<BODY>">
+			Email
+	</a>&nbsp;
+	</p>
+	<p>&nbsp;</p>
+	<p><strong><em>More:&nbsp;&nbsp;</em></strong> 
+	<!-- Donate -->
+		<a href="https://donate.daysforgirls.org/give/136291/#!/donation/checkout/" target="_blank"><strong><em>Donate</em></strong></a>&nbsp;&nbsp;
+	
+	<!-- DfG Org -->
+		<a href="https://www.daysforgirls.org/" target="_blank"><strong><em>Days For Girls, Int'l</em></strong> </a>&nbsp;&nbsp;
+	<!-- Sitemap -->
+		<a href="dfg-rb-sitemap.html">
+			<strong><em>Sitemap</em></strong></a>&nbsp;&nbsp;
+	<!-- Location Map -->
+		<a href="dfg-rb-map-view.html"><strong><em>DfG RB Map</em></strong></a>&nbsp;&nbsp;
+	<!-- Calendar -->
+		<a href="dfg-rb-calendar-actual.html"><strong><em>RB Calendar</em></strong></a>&nbsp;&nbsp;
+	<!-- Sign-Up -->
+		<a href="dfg-rb-sign-up.html"><strong><em>RB Sign-Up</em></strong></a>&nbsp;&nbsp;
+			
+	</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>	
+		
+	</footer>
+	
+	<script src="myjsjwt/login.js">      </script>
+	<script src="myjsjwt/consent.js">    </script>
+	<script src="myjsjwt/app.js">        </script>
+	<script src="myjsjwt/manifest.js">  </script>
+	<script src="myjsjwt/manifest.json"> </script>
+	<script src="myjsjwt/webworkers.js"> </script>
+	<script src="myjsjwt/webstorage.js"> </script>
+	<script src="myjsjwt/indexdb.js">    </script>
+	
+	<script src="myjsjwt/private.js"> </script>
+	<script src="myjsjwt/pre-dom.js"> </script>
+	<script src="myjsjwt/previous.js"></script>
+	<script src="myjsjwt/sign.js">    </script>
+	<script src="myjsjwt/state.js">   </script>
+	<script src="myjsjwt/unique.js">  </script>
+	<script src="myjsjwt/web-supp.js"></script>
+	<script src="myjsjwt/web-util.js"></script>
+	<script src="myjsjwt/data.js">    </script>
+</body>
+	</html>

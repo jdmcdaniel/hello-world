@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/dfg-flower.png"/>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/style.css"            rel="stylesheet" type="text/css" />
+<link href="css/iframe.css"           rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-4.3.1.css"  rel="stylesheet" type="text/css" />
+
+<link href="css/rb-sign-up.css"         rel="stylesheet" type="text/css" />
+
+<!-- jdmc <link href="myjsjwt/a-cssjs.css"  rel="stylesheet" type="text/css"> -->
+
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+
+<script src="http://use.edgefonts.net/baumans:n4:default.js" type="text/javascript"></script>
+
+<!-- for email, as js from client directly from web-page and browser out to a service -->
+<!-- no application needed, but Receiving system must take simple/easy authentication -->
+<!-- no 2-factor, no i'm not a robot, no capucha/re-captacha -->
+<!-- need ssl which we have. -->
+
+<!--
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="index.js"></script>
+<script src="dfg-index-sw.js"></script>
+-->
+
+<meta name="description" content="Rancho Bernardo Local Community Participation in Days For Girls Activities">
+<meta name="keywords" content="San-Diego North County Community-Participation, Days-For-Girls, DfG-Volunteer Participation-Events Donate ">
+	
+<meta name="geo.placename" content="Days For Girls, 11111 Rancho Bernardo Rd, San Diego CA, 92127, USA"/>  
+<meta name="geo.region"   content="US-California"/>	
+<meta name="geo.position" content="33.023228,-117.089529"/>
+<meta name="ICBM"         content="33.023228,-117.089529"/>
+
+
+<title>DfG Rancho Bernardo | Sign-Up | Info  </title>
+</head>
+<!-- If you're encoding a string to put in a URL component (a querystring parameter), you should call encodeURIComponent .
+-->
+<body>		
+			<header>
+			<section>
+			<div itemscope itemtype="http://schema.org/LocalBusiness">
+			<h1 id="home-logo" itemprop="name">Days For Girls, San Diego North County, <br><em><u>Rancho Bernardo</u></em></h1>
+			</div>
+			
+			<section style="float: left;">
+				<a href="https://www.daysforgirls.org/" target="_blank">
+				<img src="images/dgf-top-logo.png" alt="Logo, Days For Girls, Small Flower Pattern" width="240" height="115"  class="Branding Flower box-shadow">
+				</a> 
+			</section>
+				
+				<!-- box-shadow: 2px 2px 13px #000; was rb-logo7 -->
+			<section id="rb-logo" style="float: right; margin-right: 30px; ">
+			
+			<img src="images/rancho-bernardo-logo4.jpg" alt="Logo, Days For Girls, Rancho Bernardo Stamp" width="125" height="130" class="Branding RB" > 
+			
+			</section>
+			
+			<div itemscope itemtype="http://schema.org/PostalAddress">
+			
+			<p><span itemprop="streetAddress">11111 Rancho Bernardo Rd</span><br>
+			<span itemprop="addressLocality">San Diego</span>
+			<span itemprop="addressRegion">CA</span>
+			<span itemprop="postalCode">92127</span><br>
+			Call: <a href="tel://7607441150" 
+			itemprop="telephone"> 760-744-1150</a>
+			&nbsp;Or: <a href="sms://7607441150">...Text<br></a>
+			<!--  U+1F5E9 texting symbols -->
+			
+			Email: <a href="mailto:rene-mcdaniel@dfg-rancho-bernardo.com?bcc=emailbcc@dfg-rancho-bernardo.com?subject=Making%20Contact&body=Hi%20Rene,%20I'm%20interested%20in:" 
+			itemprop="email">rene-mcdaniel@dfg-rancho-bernardo.com</a> </p>
+			<p style="font-size: 0.10em;">
+			&nbsp;</p>	
+			</div>
+			
+			</section>
+			
+			<section>
+				
+				<h2-dfg><em><strong>" Turning Periods Into Pathways "</strong></em></h2-dfg>
+			
+			<!-- dfg-int'l color-23:= F19622, ours=f89607  -->	
+			
+			</section>
+			</header>
+			
+			<!-- Qualifying the user, not novice; then expose more, count visits by document ready function (similar to onLoad), use localStorage to save intermediate results across multiple pages and multiple visits. Only install this ready count on the top/first-5 menu items pages. count is used for when to expose front-anchors. this count is per user/device as the data is storage locally on their device -->
+			<script>
+				"use strict";
+				$(document).ready(function() {
+					if (isNaN(localStorage.userRevisits) ) 
+		        { //Takes care of the case where userRevisits NaN
+				    localStorage.userRevisits = 0;
+				    }
+
+				if (localStorage.userVisits)
+						{ 
+						localStorage.userVisits = parseInt(localStorage.userVisits) + 1;
+						}
+				else
+						{
+						localStorage.userVisits = 1;
+						localStorage.userRevisits = 0;
+						}
+				if (sessionStorage.userVisits)
+						{ 
+						sessionStorage.userVisits = parseInt(sessionStorage.userVisits) + 1;
+						}
+				else
+						{
+						sessionStorage.userVisits = 1;
+						localStorage.userRevisits = parseInt(localStorage.userRevisits) + 1 ;
+						}
+				} );
+				</script>
+			
+			<section id="front-anchors">
+				<a name="jump2signup" style="margin-top: -3px;"></a>
+			
+			<ax1></ax1> <!-- placeholder to be filled in by script -->
+			
+			<!-- Since document ready occurs at the load end, this condition won't trigger until the 10th entry, 1 delay for being at the end, 1 delay waiting for next repaint to occur, and 1 for subtracting the 1st session count; ie visits=10, revisits=9 -->
+			<script>
+		  "use strict";
+			if (   localStorage.getItem("subscribed") == "checked" ||  localStorage.getItem("signedUp") == "checked" || (parseInt(localStorage.getItem("userRevisits") ) >= "8"  ) ) 
+			 {
+				var a = `<a>	 
+			<!-- Location Map -->
+				<a href="dfg-rb-map-view.html#jump2map"><strong><em>DfG RB Map</em></strong></a>&nbsp;&nbsp;
+			<!-- Calendar -->
+				<a href="dfg-rb-calendar-actual.html#jump2calendar"><strong><em>RB Calendar</em></strong></a>&nbsp;&nbsp;
+			<!-- Info -->
+				<a href="dfg-rb-local.html#jump2info"><strong><em>RB Info</em></strong></a>&nbsp;&nbsp;
+			
+				<!-- RB Contacts, conditional based on sign up and cookies -->
+				<p1 style= "font-size: 1.4em;">  <br></p1>
+				
+				<\a>`;
+			$('ax1').append(a);
+			 }
+			</script>
+			<!-- placeholder to be filled in by script below; check, then; expose restricted page link for the members who signed up/subscribed -->
+				<axx></axx>
+				<script>
+				"use strict";
+				if (localStorage.getItem("subscribed") == "checked" ||  localStorage.getItem("signedUp") == "checked" )
+				{
+				var a = `<a>
+				<a href="dfg-rb-group-info.html#jump2group-info"><strong><em>Group-Info&nbsp;&nbsp;&nbsp;&nbsp;</em></strong></a>
+				
+				<\a>`;
+				$('axx').append(a);
+				}
+				</script>
+			
+			
+			
+			<!-- from above; first visit; equals else equals show nothing for front-anchors -->
+			</section>
+			
+			<div-tabs class="nav-tabs bkgbreadcrumb">
+			
+				 <a href="dfg-rb-index.html"          >Home</a>
+				 <a href="dfg-rb-sign-up.html"        ><em><u>Join</u></em></a>	
+				 <a href="dfg-rb-stories.html"        >Stories</a>
+				 <a href="dfg-rb-share.html"          >Share</a>
+				 <a href="dfg-rb-newsletter.html"     >News</a>
+				 
+			</div-tabs>	
+			
+
+		<div>
+			<section id="body-text-headings">
+		
+			<h1 style="margin-left: 30px; margin-right: 30px; color: rgb(15, 10, 10)">
+				<img src="images/dfg-flower.png" alt="Logo, Days For Girls, Small Flower" width="30" height="35" style="padding-bottom: 5px;">
+			<em style="margin-left: -12px;">Rancho Bernardo...Sign-Up; Join</em>
+			</h1>
+</section> 
+<!-- id="body-text" -->
+<section>
+		<script>
+		"use strict";
+		$(document).ready(function() {
+			if (!(localStorage.formSample) ) 
+				{ //for testing
+				localStorage.formSample = "false";
+				}
+				//if it exists and is true; don't do anything, (preserve it)
+			else if ( ! (localStorage.formSample == "true") ) 
+			  { // else do the below
+				localStorage.formSample = "false";
+				}
+
+/*
+      window.onscroll = function (e)
+				{ 
+				localStorage.formSample = "jmcdaniel@cox.net?signup=signup&ageamount=age13&subscribe=subscribe&firstname=John&lastname=McDaniel&email=jdmcdaniel%40cox.net&tel=555-555-5555&foundby=flyer&interest=kitting&submit=Sign+Me+Up%21&timestamp1=Sun+Jul+26+2020+10%3A35%3A40&timestamp1b=Sun+Jul+26+2020+10%3A36%3A20&secret1=12345678&readpolicy1=&readpolicy2=&readpolicy3=";
+				}
+*/
+		});
+</script>
+</section>
+
+<form action="mail:jmcdaniel@cox.net"  id="subscribe" title="Sign-Up" enctype="text/plain" onsubmit="localStorage.formQstring = document.getElementById('subscribe').value; 
+localStorage.myEmailIdPreserved = document.getElementById('email').value;
+console.log('myEmailIdPreserved = ' + localStorage.myEmailIdPreserved);
+alert('🌸 This form has been submitted \n Check your email for confirmation message \n  ♥♥♥  Thank-You... '+ document.getElementById('firstname').value +' ♥♥♥\n (Days For Girls, Rancho Bernardo, Ca)');
+//console.log('email input as = ' + document.getElementById('email').value);
+//alert('🌸 This form');
+"> <!-- finish onsubmit via ending quote -->
+<!-- end tag with caret -->
+
+
+<div class="bkgSignup" id="image-container">
+<section id="subpage-content1" style="box-shadow: 4px 4px 10px #000;">
+
+	<h2><b><u>Belong, Join, Sign-up for "Days For Girls" activities;</u></b></h2>
+
+<!-- "https://someAddress.salesforce.com/ -->
+<!-- "file://form-data.txt/ -->
+<!-- enctype="multipart/form-data" method=post -->
+
+<p style="font-size: 20px;
+font-weight: 400;">Sign-up for our mailing list to get the latest information and updates about scheduled activities, announcements, participation
+events, special events/conferences, sewing days and other local Rancho Bernardo activities.</p>
+
+<!--
+	♥
+-->
+<h2>      
+			<input name="signup" type="checkbox" required="required" class="largerCheckbox1" id="agree2" value="signup" 
+			onclick="localStorage.setItem('signedUp', 'checked') ">
+
+			<label for="agree2">&nbsp;<b>Sign-Up!</b> Include Me, I'm Interested in Days For Girls ♥</label>&nbsp;<a title="Read-Me" href="dfg-rb-privacy-policy.html" target="_blank" 
+			onclick="document.getElementById('readpolicy1').checked = 'checked'; 
+			document.getElementById('readpolicy1').defaultValue = 'checked';
+			document.getElementById('readpolicy1').value = new Date().toString().slice(0,24);  
+			document.getElementById('readpolicy1').defaultValue = new Date().toString().slice(0,24); localStorage.setItem('readpolicy1', 'clicked') ">
+			<strong><em style="font-size: 15px; color: rgba(0, 0, 238, 0.80)">&nbsp;Privacy Policy</em></strong></a>
+			
+</h2>
+<p></p>
+
+<!-- NO LONGER REQUIRED, to be force filled in required="required" -->
+
+<input name="ageamount" type="radio" class="radioCheckbox1" id= "age16p" title="Set my age bracket" value="age16">
+<h2>
+<label  for="age16p" title="Set my age bracket">&nbsp;I'm 16 years of age, or older</label>
+</h2>
+
+
+	<input name="ageamount" type="radio"  class="radioCheckbox2" id="age13p" title="Set my age bracket" value="age13" checked>
+	<h2 style="margin-top: -20px">
+	<label  for="age13p" title="Set my age bracket">&nbsp;I'm 13 years of age, or 14, or 15 </label>
+	</h2>
+
+	
+	<input name="ageamount" type="radio"  class="radioCheckbox3" id="age12m" title="Set my age bracket" value="age12">
+	<h2 style="margin-top: -20px">
+	<label  for="age12m" title="Set my age bracket">&nbsp;I'm 12 years of age, or younger</label>
+	</h2>
+	
+	<p style="font-size: 20px; font-weight: 400;">"On The Move?", then  <strong>"Subscribe"</strong> for <em>"push notifications"</em> to your mobile device.<br> Yes, Send to my Device, notifications...like the DfG-RB monthly calendar update. </p>
+<p style="margin-top: -10px; font-size: 13px;">&nbsp; <b>optional; smart phone feature</b></p>
+
+<p style="margin-top: -17px;">
+<label for="agree1" title="Check to Subscribe">&nbsp;<b style="font-size: 1.4em; ">Okay!... I accept</b></label>
+<input name="subscribe" type="checkbox"  class="largerCheckbox0" title="Check to Subscribe" id="agree1" value="subscribe" onclick="localStorage.setItem('subscribed', 'checked'); document.getElementById('tel').required = (document.getElementById('tel').required) ? '' : 'required' ">
+<span style="font-size: 1.4em; font-weight: 500;">the <u>Terms and Conditions</u></span>  <a title="Read-Me" href="dfg-rb-gdpr-ccpa-policy.html" target="_blank" onclick="document.getElementById('readpolicy2').checked = 'checked'; 
+	document.getElementById('readpolicy2').defaultValue = 'checked';
+	document.getElementById('readpolicy2').value = new Date().toString().slice(0,24);  
+	document.getElementById('readpolicy2').defaultValue = new Date().toString().slice(0,24); localStorage.setItem('readpolicy2', 'clicked') 
+	">
+<strong><em style="font-size: 14px; color: rgba(0, 0, 238, 0.80)"
+>&nbsp;&nbsp;Use / Rights Policy</em></strong></a>
+
+</p>
+
+</section>
+<section id="subpage-content2">	  
+<p style="display: inline-block">
+<label for="firstname" style="margin-left: -8px"><b>First Name</b>&nbsp;&nbsp;</label>
+<input name="firstname" type="text" class="noClear" required="required" id="firstname" placeholder="Your First Name">
+</p>
+<p style="display: inline-block"> 
+<label for="lastname" style="margin-left: -8px"><b>Last Name</b></label>
+<input name="lastname" type="text" class="noClear" required="required" id="lastname" placeholder="Your Last Name">
+</p>
+
+<p style="display: inline-block">
+<label for="email" style="margin-left: -8px"><b>Your Email</b>&nbsp;&nbsp;</label>
+<input name="email" type="email" class="noClear" required="required" placeholder="Your eMail Address" id="email" multiple>
+</p>
+<p style="display: inline-block">
+<input name="tel" type="tel" class="noClear" id="tel" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}|[0-9]{10}">
+<!-- more "[0-9]{10}" ; simplest -->
+<!-- more "[0-9]{3}-[0-9]{3}-[0-9]{4}" ; next simplest -->
+
+<!-- more "(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" -->
+<!-- "[0-9]{3}-[0-9]{3}-[0-9]{4}|(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" -->
+<label for="tel" style="margin-left: -8px"><b># For Texting</b></label>
+</p>
+
+<p>
+<label for="source">&nbsp;&nbsp;&nbsp;How Did You Hear About Days For Girls, RB?&nbsp;</label>
+<select name="foundby" id="source" >
+<option selected="selected">-- Select --</option>
+<option value="search">Web Search</option>
+<option value="social">Social Media</option>
+<option value="flyer">Flyer</option>
+<option value="friend">Friend</option>
+<option value="web">Article</option>
+<option value="chit">Chit-Chat</option>
+<option value="other">Other</option>
+</select>
+</p>
+
+<p>
+<label for="source1">&nbsp;&nbsp;&nbsp;I'm Interested In Helping With:</label>
+<select name="interest" id="source1" >
+<option selected="selected">-- Select --</option>
+<option value="sewing">Sewing</option>
+<option value="kitting">Kitting</option>
+<option value="fabric">Fabrics Prep</option>
+<option value="promoting">Promoting</option>
+<option value="organizing">Organizing</option>
+<option value="accounting">Book Keeping</option>
+<option value="other2">Other</option>
+</select>
+</p>
+<p>
+<!-- document.getElementById('currenttime1b').defaultValue = new Date().toString().slice(0,24);  -->
+<input name="submit" type="submit" class="noClear2" id="submit"   value="Sign Me Up!" onclick="
+document.getElementById('clicktime1b').defaultValue = new Date().toString().slice(0,24);
+document.getElementById('clicktime1b').value = new Date().toString().slice(0,24);
+document.getElementById('userHasScrolled1').value = localStorage.userHasScrolled1;
+document.getElementById('userHasScrolled2').value = localStorage.userHasScrolled2;
+//---------------------------------
+document.getElementById('backhighlite').value = localStorage.backhighlite;
+document.getElementById('backhighlite2').value = localStorage.backhighlite2;
+document.getElementById('exposeHide').value = localStorage.exposeHideTgl;
+document.getElementById('myInfoShown').value = localStorage.myInfoShown;
+document.getElementById('gdprDownload').value = localStorage.gdprDownload;
+document.getElementById('privacyDownload').value = localStorage.privacyDownload;
+document.getElementById('gdprPrint').value = localStorage.gdprPrint;
+document.getElementById('privacyPrint').value = localStorage.privacyPrint;
+document.getElementById('ourAssignedId').value = sessionStorage.ourAssignedId;
+document.getElementById('relativePositionCount').value = sessionStorage.relativePositionCount;
+document.getElementById('ourTableIdxId').value = localStorage.ourTableIdxId; 
+document.getElementById('readpolicy4').value = localStorage.readpolicy4;
+document.getElementById('readpolicy5').value = localStorage.readpolicy5;
+document.getElementById('readpolicy6').value = localStorage.readpolicy6;
+document.getElementById('readpolicy7').value = localStorage.readpolicy7;
+document.getElementById('readpolicy8').value = localStorage.readpolicy8;
+document.getElementById('readpolicy9').value = localStorage.readpolicy9;
+document.getElementById('readpolicy10').value = localStorage.readpolicy10;
+// ---------------------------
+
+">&nbsp;
+<input name="reset" type="reset" class="noClear2" id="reset"   value="Reset" onclick="document.getElementById('tel').required='' ">
+<!-- DfG Org -->
+<a title="Read-Me" href="dfg-rb-privacy-policy.html" target="_blank" onclick="document.getElementById('readpolicy3').checked = 'checked'; 
+document.getElementById('readpolicy3').defaultValue = 'checked';
+document.getElementById('readpolicy3').value = new Date().toString().slice(0,24);  
+document.getElementById('readpolicy3').defaultValue = new Date().toString().slice(0,24); localStorage.setItem('readpolicy3', 'clicked') ">
+
+<strong><em style="font-size: 14px; color: rgba(0, 0, 238, 0.80);">Privacy Policy (if not already)</em></strong> </a>&nbsp;&nbsp;
+</p>
+<!-- value="2017-06-13T13:00" js; new Date().toJSON().slice(0,10);-->
+<input name="timestamp1" type="text"  class="noClear3" id="currenttime1" style="display: none">
+<!-- style="visibility: hidden"  -->
+<script>
+	"use strict";
+	document.getElementById('currenttime1').defaultValue = new Date().toString().slice(0,24);
+	document.getElementById('currenttime1').value = new Date().toString().slice(0,24);
+	</script>
+
+<input name="timestamp1b" type="text"  class="noClear3" id="clicktime1b" style="display: none">
+<!-- style="visibility: hidden" or "display: none" -->
+<script>
+	"use strict";
+	document.getElementById('clicktime1b').defaultValue = new Date().toString().slice(0,24);
+	document.getElementById('clicktime1b').value = new Date().toString().slice(0,24);
+	</script>
+
+<input name="secret1" type="text"  class="noClear3" id="secret1" value="12345678" style="display: none">
+<script>
+"use strict";
+document.getElementById('secret1').defaultValue = "12345678";	
+</script>
+
+<input name="readpolicy1" type="text"  class="noClear3" id="readpolicy1" style="display: none">
+<input name="readpolicy2" type="text"  class="noClear3" id="readpolicy2" style="display: none">
+<input name="readpolicy3" type="text"  class="noClear3" id="readpolicy3" style="display: none">
+
+<!--      ---------------------------------------->
+<input name="readpolicy4" type="text"  class="noClear3" id="readpolicy4" style="display: none">
+<input name="readpolicy5" type="text"  class="noClear3" id="readpolicy5" style="display: none">
+<input name="readpolicy6" type="text"  class="noClear3" id="readpolicy6" style="display: none">
+<input name="readpolicy7" type="text"  class="noClear3" id="readpolicy7" style="display: none">
+<input name="readpolicy8" type="text"  class="noClear3" id="readpolicy8" style="display: none">
+<input name="readpolicy9" type="text"  class="noClear3" id="readpolicy9" style="display: none">
+<input name="readpolicy10" type="text"  class="noClear3" id="readpolicy10" style="display: none">
+ 
+<input name="backhighlite" type="text"  class="noClear3" id="backhighlite" style="display: none">
+<input name="backhighlite2" type="text"  class="noClear3" id="backhighlite2" style="display: none">
+
+<input name="exposeHide" type="text"  class="noClear3" id="exposeHide" style="display: none">
+<input name="myInfoShown" type="text"  class="noClear3" id="myInfoShown" style="display: none">
+
+<input name="gdprDownload" type="text"  class="noClear3" id="gdprDownload" style="display: none">
+<input name="privacyDownload" type="text"  class="noClear3" id="privacyDownload" style="display: none">
+<input name="gdprPrint" type="text"  class="noClear3" id="gdprPrint" style="display: none">
+<input name="privacyPrint" type="text"  class="noClear3" id="privacyPrint" style="display: none">
+
+<input name="ourAssignedId" type="text"  class="noClear3" id="ourAssignedId" style="display: none">
+<input name="relativePositionCount" type="text"  class="noClear3" id="relativePositionCount" style="display: none">
+<input name="ourTableIdxId" type="text"  class="noClear3" id="ourTableIdxId" style="display: none">
+
+<!--      ---------------------------------------->
+<input name="userHasScrolled1" type="text"  class="noClear3" id="userHasScrolled1" style="display: none">
+<input name="userHasScrolled2" type="text"  class="noClear3" id="userHasScrolled2" style="display: none">
+
+<script>
+"use strict";
+//	document.getElementById('secret1').defaultValue = new OurCookieValue1().toString().slice(0,24);
+//	document.getElementById('secret1').value = new OurCookieValue1().toString().slice(0,24);
+</script>
+
+
+
+
+<p>&nbsp;<br></p>
+<grid-line>_______________________________________________________________________________________</grid-line>
+<h2>Make the difference, Thank-you for connecting today!</h2>
+
+
+</section>
+</div>
+</form>
+
+<div>
+<section id="body-text-tag">
+	<h2>You too, Can volunteer, You too, Can make a difference.</h2>
+	<p style="margin-left: 30px; margin-right: 30px;"><strong>Take the step, connect today: &nbsp;</strong>
+	<a href="dfg-rb-list-update.html"><strong><em>Unsubscribe/Update</em></strong></a>&nbsp;&nbsp; OR:&nbsp;&nbsp;	
+	<a href="dfg-rb-newsletter.html"><strong><em>RB News Letter</em></strong></a>&nbsp;&nbsp; OR:&nbsp;&nbsp;<a href="mailto://:rene-mcdaniel@dfg-rancho-bernardo.com"><strong><em>email:&nbsp;rene-mcdaniel@dfg-rancho-bernardo.com</em></strong></a></p>
+	</section>
+	</div>
+</div>
+
+
+	<section id="bottom-banner2">
+		<p class="backgroundcolor1"> <strong><em>Support Days For Girls</em></strong></p>
+	</section>
+		
+	<section id="bottom-banner">
+		<p class="backgroundcolor2" style="width: 34.8%"><strong><em>Every Girl, Everywhere, <br>Period.</em></strong></p>
+		<p class="backgroundcolor3" style="width: 32.1%"><img src="images/dfg-flower-sm-logo.png" alt="Logo, Days For Girls, Small Flower" width="38" height="29">MAKE AN IMPACT<br> <strong><em>Join In!</em></strong></p>
+		
+		<p class="backgroundcolor2" style="width: 33.1%"><strong><em>Turning Periods Into</em></strong><br><strong><em>Pathways</em></strong></p>
+	</section>
+	<footer>
+		<p>Copyright © 2020  <!-- <a href="https://dfg-rancho-bernardo.com"> --><a href="dfg-rb-index.html"><strong><em>Days For Girls, Rancho Bernardo, Ca 92127</em></strong></a>&nbsp;&nbsp;<a href="mailto://:rene-mcdaniel@dfg-rancho-bernardo.com"><strong><em>email:&nbsp;rene-mcdaniel@dfg-rancho-bernardo.com</em></strong></a></p>
+	<p><strong><em>Share Us on:</em></strong> 	
+		
+	<!-- Basic Share Links -->
+	<!-- Twitter (url, text, @mention) -->
+	<a href="https://twitter.com/share?url==myTwURL&text=?via=dfg-rancho-bernardo">Twitter
+	</a>&nbsp;
+	
+	<!-- Facebook (url) -->
+	<a href="https://www.facebook.com/sharer/sharer.php?u=myFbURL">
+			Facebook
+	</a>&nbsp;
+	
+	<!-- Instagram (subject, body) -->
+	<a href="https://www.instagram.com/sharer/sharer.php?u=myIgURL">
+			Instagram
+	</a>&nbsp;	
+		
+	<!-- Email (subject, body) -->
+	<a href="mailto:?subject=dfg-rb-snippet&body=?Paste">
+			Email
+	</a>&nbsp;
+	</p>
+	<p>&nbsp;</p>
+	<p><strong><em>More:&nbsp;&nbsp;</em></strong> 
+	<!-- Donate -->
+		<a href="https://donate.daysforgirls.org/give/136291/#!/donation/checkout/" target="_blank"><strong><em>Donate</em></strong></a>&nbsp;&nbsp;
+	
+	<!-- DfG Org -->
+		<a href="https://www.daysforgirls.org/" target="_blank"><strong><em>Days For Girls, Int'l</em></strong> </a>&nbsp;&nbsp;
+	<!-- Sitemap -->
+		<a href="dfg-rb-sitemap.html">
+			<strong><em>Sitemap</em></strong></a>&nbsp;&nbsp;
+	<!-- Location Map -->
+		<a href="dfg-rb-map-view.html"><strong><em>DfG RB Map</em></strong></a>&nbsp;&nbsp;
+	<!-- Calendar -->
+		<a href="dfg-rb-calendar-actual.html"><strong><em>RB Calendar</em></strong></a>&nbsp;&nbsp;
+	<!-- Sign-Up -->
+		<a href="dfg-rb-sign-up.html"><strong><em>RB Sign-Up</em></strong></a>&nbsp;&nbsp;
+			
+	</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>	
+	</footer>
+	
+	<script src="myjsjwt/login.js">      </script>
+	<script src="myjsjwt/consent.js">    </script>
+	<script src="myjsjwt/app.js">        </script>
+	<script src="myjsjwt/manifest.js">   </script>
+	<script src="myjsjwt/manifest.json"> </script>
+	<script src="myjsjwt/webworkers.js"> </script>
+	<script src="myjsjwt/webstorage.js"> </script>
+	<script src="myjsjwt/indexdb.js">    </script>
+	
+	<script src="myjsjwt/private.js">  </script>
+	<script src="myjsjwt/pre-dom.js">  </script>
+	<script src="myjsjwt/previous.js"> </script>
+	<script src="myjsjwt/sign.js">     </script>
+	<script src="myjsjwt/state.js">    </script>
+	<script src="myjsjwt/unique.js">   </script>
+	<script src="myjsjwt/web-supp.js"> </script>
+	<script src="myjsjwt/web-util.js"> </script>
+	<script src="myjsjwt/data.js">     </script>
+	
+</body>
+</html>

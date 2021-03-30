@@ -1,0 +1,1222 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/dfg-flower.png"/>
+<meta charset="UTF-8">
+<title>Our Group List | Last Update July 15th</title>
+<link href="css/bootstrap-4.3.1.css"  rel="stylesheet" type="text/css" />
+
+<link href="css/style-group-list.css" rel="stylesheet" type="text/css">
+
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+
+<style> 
+  div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -33px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgb(248,198,63);
+  padding-left: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+}
+span.sticky-column {
+  display: inline-block;
+}
+
+img.thumbnail {
+  margin-left: 4px;
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 8px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+img.thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.8);
+  /* transform: scaleXY(5); */
+}
+
+.fixed_header {
+width: 800px; 
+margin: 0 auto 0 auto;
+display: block;
+}
+td.col1 {
+	text-align: left;
+	width: 18%;
+	background-color:rgba(235, 233, 180, 0.9);
+	padding: 3px;
+	margin-top: 10px;
+	border-bottom: thin solid #3004C4;
+}
+td.col2 {
+
+}
+td.col3 {
+  text-align: left;
+	width: 18%;
+	background-color:rgba(235, 233, 180, 0.9);
+	padding: 3px;
+	margin-top: 10px;
+	border-bottom: thin solid #3004C4;
+  }
+
+td.col4 {
+
+}
+
+td.col5 {
+ display: none; 
+}
+td.col6 {
+ display: none; 
+}
+td.col7 {
+ display: none; 
+}
+td.col8 {
+ display: none; 
+}
+td.col9 {
+ display: none; 
+}
+td.col10 {
+ display: none; 
+}
+td.col11 {
+ display: none; 
+}
+td.col12 {
+ display: none; 
+}
+td.col13 {
+ display: none; 
+}
+td.col14 {
+ display: none; 
+}
+td.col15 {
+ display: none; 
+}
+td.col16 {
+ display: none; 
+}
+td.col17 {
+ display: none; 
+}
+td.col18 {
+ display: none; 
+}
+td.col19 {
+ display: none; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+
+<body>
+  &nbsp;
+  <!-- print='dfg-rb-group-list.htm' class="fixed_header" -->
+  <span>
+  <a class="btn btn-sm" role="button" href='dfg-rb-group-list.htm'  style="color: #000;
+  background-color: rgba(47, 116, 77, 0.3); border-color: #1e7e34;" title="Click For Full List" onclick= "window.print();return false;">Print (full length)</a>
+  <a class="btn btn-sm" role="button"  download='dfg-rb-group-list.htm' href='' style="color: #000;
+  background-color: rgba(47, 116, 77, 0.3);; border-color: #1e7e34;" title="Full List" >Download(full length)</a>
+  <b class="btn btn-colors btn-sm" style="background-color:rgb(240, 231, 231); ">Last Updated <span id="inject1a"></span>; always subject to change.-&nbsp;(<span id="inject1"></span> Id's Hidden)</b>
+</span>
+
+
+<p style="font-size: 4px; background-color: #FFF;">&nbsp;</p>
+
+<div class="sticky">
+  <a name="jump2listing" style="margin-top: -3px; font-size: 4px;"></a>
+  <div style="border: thin solid #3004C4;">
+     &nbsp;DfG-RB Group List <span style="font-size: 13px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Updated <span id="inject3a"></span>; always subject to change.-&nbsp;(<span id="inject3"></span> Id's Hidden)</span></div>
+  <span>
+        <em style="text-align: left;
+        width: 23%;
+	      float: left;
+        padding-bottom: 3px;
+        border-bottom: thin solid #3004C4;
+        border-left: thin solid #3004C4;
+        background-color: rgb(248,198,63); background-size: cover;">
+        Phone</em>
+        <em style="text-align: left;
+        width: 34%;
+	      float: left;
+        padding-bottom: 3px;
+        border-bottom: thin solid #3004C4;
+        background-color:  rgb(248,198,63); background-size: cover;">
+        Name</em>
+        <em style="text-align: left;
+        width: 25%;
+	      float: left;
+        padding-bottom: 3px;
+        border-bottom: thin solid #3004C4;
+        background-color: rgb(248,198,63); background-size: cover;">
+        Email</em>
+        <em style="text-align: left;
+        width: 18%;
+	      float: left;
+        padding-bottom: 3px;
+        border-bottom: thin solid #3004C4;
+        border-right: thin solid #3004C4;
+        background-color: rgb(248,198,63); background-size: cover;">
+        Image</em>
+  </span>
+</div>
+<!-- 
+function getItemPropsAsJSON(){
+  var ob = {};
+  Array.from(document.getElementsByTagName('span')).forEach(el=> {     
+    var key = el.getAttribute('itemprop');
+    var val = el.innerText;
+    if (key && val) ob[key] = val;
+  });
+  return ob;
+}
+  ---------------------------------------
+const [email, postalCode] = ['email', 'postalCode'].map(
+  val => document.querySelector(`span[itemprop="${val}"]`).textContent
+);
+console.log(email);
+console.log(postalCode);
+-----------------------------------------
+
+-->
+<!-- obfuscate jdmc  -->
+<!-- Set the DATE, 2 fields below, 07-15-2020 last updated date reference, id=revisionDate innerHTML -->
+<table class="fixed_header-2" id="assembledTable">
+  <caption id="revisionDate" style="display:none">07-15-2020</caption>
+  <tbody>
+    <tr class="result_tr" id="myResult_tr1" style="display: table-row">
+      <td id="tr1Col1"  id="tr1Col5" class="col1">
+        <a href="tel://7607441150" 
+        itemprop="telephone">&nbsp;&#128222; 579-002-3468<br><br></a><a href="sms://7607441150">&nbsp;<b>&nbsp;&nbsp;&nbsp;&#128172;</b> 579-002-3468</a></td>
+      <td id="tr1Col2"  class="col2"><b>Rene McDaniel</b></td>
+      <td id="tr1Col3"  class="col3">
+      <a class="aCol3" href="mailto:rene-mcdaniel@dfg-rancho-bernardo.com" 
+      itemprop="email">rene-mcdaniel@dfg-rancho-bernardo.com
+      </a>
+
+      </td>
+      <td id="tr1Col4"  class="col4"><img class="thumbnail" src="images/pic1.jpg" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr1Col5"  class="col5" label="Show/Hide">true</td> 
+      <td id="tr1Col6"  class="col6" label="GPS, Glanlng">Steel Panther with Madison Lune</td>
+      <td id="tr1Col7"  class="col7" label="Age Group" >Steel Panther with Madison Lune</td>
+      <td id="tr1Col8"  class="col8" label="Subscribed">Steel Panther with Madison Lune</td>
+      <td id="tr1Col9"  class="col9" label="Joined">Steel Panther with Madison Lune</td>
+      <td id="tr1Col10"  class="col10" label="MyIdToken">Steel Panther with Madison Lune</td>
+      <td id="tr1Col11"  class="col11" label="Expiration">Steel Panther with Madison Lune</td>
+      <td id="tr1Col12"  class="col12" label="MyRole / Position">Steel Panther with Madison Lune</td>
+      <td id="tr1Col13"  class="col13" label="Secondary Contacts">Steel Panther with Madison Lune</td>
+      <td id="tr1Col14"  class="col14" label="Friends">Steel Panther with Madison Lune</td>
+      <td id="tr1Col15"  class="col15" label="References">Steel Panther with Madison Lune</td>
+      <td id="tr1Col16"  class="col16" label="ZipCode">Steel Panther with Madison Lune</td>
+      <td id="tr1Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr1Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr1Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    
+    <tr class="result_tr" id="myResult_tr2">
+      <td id="tr2Col1"  class="col1">🌸</td>
+      <td id="tr2Col2"  class="col2">TBA</td>
+      <td id="tr2Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel@cox.net
+      </a></td>
+      <td id="tr2Col4"  class="col4"><img class="thumbnail" src="images/pic2.jpg" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr2Col5"  class="col5">true</td>
+      <td id="tr2Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr2Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr2Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr2Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr2Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr2Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr2Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr2Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr2Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr2Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr2Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr2Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr2Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr2Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    
+    <tr class="result_tr" id="myResult_tr3">
+      <td id="tr3Col1"  class="col1">&nbsp;</td>
+      <td id="tr3Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr3Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >3
+      </a></td>
+      <td id="tr3Col4"  class="col4"><img class="thumbnail" src="images/pic3.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr3Col5"  class="col5">true</td>
+      <td id="tr3Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr3Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr3Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr3Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr3Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr3Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr3Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr3Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr3Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr3Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr3Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr3Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr3Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr3Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr"  id="myResult_tr4">
+      <td id="tr4Col1"  class="col1">&nbsp;</td>
+      <td id="tr4Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr4Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >4
+      </a></td>
+      <td id="tr4Col4"  class="col4"><img class="thumbnail" src="images/pic4.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr4Col5"  class="col5">true</td>
+      <td id="tr4Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr4Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr4Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr4Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr4Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr4Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr4Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr4Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr4Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr4Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr4Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr4Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr4Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr4Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr"  id="myResult_tr5">
+      <td id="tr5Col1"  class="col1">&nbsp;</td>
+      <td id="tr5Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr5Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >5
+      </a></td>
+      <td id="tr5Col4"  class="col4"><img class="thumbnail" src="images/pic5.jpg" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr5Col5"  class="col5">true</td>
+      <td id="tr5Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr5Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr5Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr5Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr5Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr5Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr5Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr5Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr5Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr5Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr5Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr5Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr5Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr5Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr">
+      <th colspan="4" class="dark-background" scope="row">June 17</th>
+    </tr>
+    <tr class="result_tr" id="myResult_tr6">
+      <td id="tr6Col1"  class="col1">&nbsp;</td>
+      <td id="tr6Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr6Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >6
+      </a></td>
+      <td id="tr6Col4"  class="col4"><img class="thumbnail" src="images/pic6.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr6Col5"  class="col5">true</td>
+      <td id="tr6Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr6Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr6Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr6Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr6Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr6Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr6Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr6Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr6Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr6Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr6Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr6Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr6Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr6Col19"  class="col19">Steel Panther with Madison Lune</td>
+  </tr>
+    <tr class="result_tr" id="myResult_tr7">
+      <td id="tr7Col1"  class="col1">&nbsp;</td>
+      <td id="tr7Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr7Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel7@cox.net
+      </a></td>
+      <td id="tr7Col4"  class="col4"><img class="thumbnail" src="images/pic7.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr7Col5"  class="col5">true</td>
+      <td id="tr7Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr7Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr7Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr7Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr7Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr7Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr7Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr7Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr7Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr7Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr7Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr7Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr7Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr7Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr8">
+      <td id="tr8Col1"  class="col1">&nbsp;</td>
+      <td id="tr8Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr8Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel8@cox.net
+      </a></td>
+      <td id="tr8Col4"  class="col4"><img class="thumbnail" src="images/pic8.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr8Col5"  class="col5">true</td>
+      <td id="tr8Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr8Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr8Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr8Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr8Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr8Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr8Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr8Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr8Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr8Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr8Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr8Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr8Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr8Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr9">
+      <td id="tr9Col1"  class="col1">&nbsp;</td>
+      <td id="tr9Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr9Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel9@cox.net
+      </a></td>
+      <td id="tr9Col4"  class="col4"><img class="thumbnail" src="images/pic9.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr9Col5"  class="col5">true</td>
+      <td id="tr9Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr9Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr9Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr9Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr9Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr9Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr9Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr9Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr9Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr9Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr9Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr9Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr9Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr9Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr10">
+      <td id="tr10Col1"  class="col1">&nbsp;</td>
+      <td id="tr10Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr10Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel10@cox.net
+      </a></td>
+      <td id="tr10Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr10Col5"  class="col5">true</td>
+      <td id="tr10Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr10Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr10Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr10Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr10Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr10Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr10Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr10Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr10Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr10Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr10Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr10Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr10Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr10Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr11">
+      <td id="tr11Col1"  class="col1">&nbsp;</td>
+      <td id="tr11Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr11Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel11@cox.net
+      </a></td>
+      <td id="tr11Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr11Col5"  class="col5">true</td>
+      <td id="tr11Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr11Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr11Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr11Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr11Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr11Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr11Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr11Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr11Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr11Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr11Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr11Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr11Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr11Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr12">
+      <td id="tr12Col1"  class="col1">&nbsp;</td>
+      <td id="tr12Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr12Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel12@cox.net
+      </a></td>
+      <td id="tr12Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr12Col5"  class="col5">true</td>
+      <td id="tr12Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr12Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr12Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr12Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr12Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr12Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr12Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr12Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr12Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr12Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr12Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr12Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr12Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr12Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr13">
+      <td id="tr13Col1"  class="col1">&nbsp;</td>
+      <td id="tr133Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr13Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel13@cox.net
+      </a></td>
+      <td id="tr13Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr13Col5"  class="col5">true</td>
+      <td id="tr13Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr13Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr13Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr13Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr13Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr13Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr13Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr13Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr13Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr13Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr13Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr13Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr13Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr13Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr14">
+      <td id="tr14Col1"  class="col1">&nbsp;</td>
+      <td id="tr14Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr14Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel14@cox.net
+      </a></td>
+      <td id="tr14Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr14Col5"  class="col5">true</td>
+      <td id="tr14Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr14Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr14Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr14Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr14Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr14Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr14Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr14Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr14Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr14Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr14Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr14Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr14Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr14Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr15">
+      <td id="tr15Col1"  class="col1">&nbsp;</td>
+      <td id="tr15Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr15Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel15@cox.net
+      </a></td>
+      <td id="tr15Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr15Col5"  class="col5">true</td>
+      <td id="tr15Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr15Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr15Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr15Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr15Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr15Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr15Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr15Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr15Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr15Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr15Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr15Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr15Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr15Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr16">
+      <td id="tr16Col1"  class="col1">&nbsp;</td>
+      <td id="tr16Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr16Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel16@cox.net
+      </a></td>
+      <td id="tr16Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr16Col5"  class="col5">true</td>
+      <td id="tr16Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr16Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr16Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr16Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr16Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr16Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr16Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr16Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr16Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr16Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr16Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr16Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr16Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr16Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr17">
+      <td id="tr17Col1"  class="col1">&nbsp;</td>
+      <td id="tr17Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr17Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel17@cox.net
+      </a></td>
+      <td id="tr17Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr17Col5"  class="col5">true</td>
+      <td id="tr17Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr17Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr17Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr17Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr17Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr17Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr17Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr17Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr17Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr17Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr17Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr17Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr17Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr17Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr18">
+      <td id="tr18Col1"  class="col1">&nbsp;</td>
+      <td id="tr18Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr18Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel18@cox.net
+      </a></td>
+      <td id="tr18Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr18Col5"  class="col5">true</td>
+      <td id="tr18Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr18Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr18Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr18Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr18Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr18Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr18Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr18Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr18Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr18Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr18Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr18Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr18Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr18Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr">
+      <th colspan="4" class="dark-background" scope="row">June 18</th>
+    </tr>
+    <tr class="result_tr" id="myResult_tr19">
+      <td id="tr19Col1"  class="col1">&nbsp;</td>
+      <td id="tr19Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr19Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel19@cox.net
+      </a></td>
+      <td id="tr19Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr19Col5"  class="col5">true</td>
+      <td id="tr19Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr19Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr19Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr19Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr19Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr19Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr19Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr19Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr19Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr19Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr19Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr19Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr19Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr19Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr20">
+      <td id="tr20Col1"  class="col1">&nbsp;</td>
+      <td id="tr20Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr20Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel20@cox.net
+      </a></td>
+      <td id="tr20Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr20Col5"  class="col5">true</td>
+      <td id="tr20Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr20Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr20Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr20Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr20Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr20Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr20Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr20Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr20Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr20Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr20Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr20Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr20Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr20Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr21">
+      <td id="tr21Col1"  class="col1">&nbsp;</td>
+      <td id="tr21Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr21Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >21
+      </a></td>
+      <td id="tr21Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr21Col5"  class="col5">true</td>
+      <td id="tr21Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr21Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr21Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr21Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr21Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr21Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr21Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr21Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr21Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr21Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr21Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr21Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr21Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr21Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr22">
+      <td id="tr22Col1"  class="col1">&nbsp;</td>
+      <td id="tr22Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr22Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >22
+      </a></td>
+      <td id="tr22Col4"  class="col4"><img class="thumbnail" src="images/Photo-Invite.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr22Col5"  class="col5">true</td>
+      <td id="tr22Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr22Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr22Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr22Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr22Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr22Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr22Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr22Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr22Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr22Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr22Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr22Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr22Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr22Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr23">
+      <td id="tr23Col1"  class="col1">&nbsp;</td>
+      <td id="tr23Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr23Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >23
+      </a></td>
+      <td id="tr23Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr23Col5"  class="col5">true</td>
+      <td id="tr23Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr23Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr23Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr23Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr23Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr23Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr23Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr23Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr23Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr23Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr23Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr23Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr23Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr23Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr24">
+      <td id="tr24Col1"  class="col1">&nbsp;</td>
+      <td id="tr24Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr24Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >24
+      </a></td>
+      <td id="tr24Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr24Col5"  class="col5">false</td>
+      <td id="tr24Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr24Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr24Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr24Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr24Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr24Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr24Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr24Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr24Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr24Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr24Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr24Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr24Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr24Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr25">
+      <td id="tr25Col1"  class="col1">&nbsp;</td>
+      <td id="tr25Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr25Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >25
+      </a></td>
+      <td id="tr25Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr25Col5"  class="col5">false</td>
+      <td id="tr25Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr25Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr25Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr25Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr25Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr25Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr25Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr25Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr25Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr25Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr25Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr25Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr25Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr25Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr26">
+      <td id="tr26Col1"  class="col1">&nbsp;</td>
+      <td id="tr26Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr26Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >26
+      </a></td>
+      <td id="tr26Col4"  class="col4"><img class="thumbnail" src="images/bricks.png" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr26Col5"  class="col5">false</td>
+      <td id="tr26Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr26Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr26Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr26Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr26Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr26Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr26Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr26Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr26Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr26Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr26Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr26Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr26Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr26Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+    <tr class="result_tr" id="myResult_tr27">
+      <td id="tr27Col1"  class="col1">&nbsp;</td>
+      <td id="tr27Col2"  class="col2">Steel Panther with Madison Lune</td>
+      <td id="tr27Col3"  class="col3"><a class="aCol3" href="mailto:jdmcdaniel@cox.net" 
+      >jdmcdaniel@cox.net
+      </a></td>
+      <td id="tr27Col4"  class="col4"><img class="thumbnail" src="images/pic1.jpg" alt="image / avatar of user / listing; default is DfG flower-logo"></td>
+      <td id="tr27Col5"  class="col5">true</td>
+      <td id="tr27Col6"  class="col6">Steel Panther with Madison Lune</td>
+      <td id="tr27Col7"  class="col7">Steel Panther with Madison Lune</td>
+      <td id="tr27Col8"  class="col8">Steel Panther with Madison Lune</td>
+      <td id="tr27Col9"  class="col9">Steel Panther with Madison Lune</td>
+      <td id="tr27Col10"  class="col10">Steel Panther with Madison Lune</td>
+      <td id="tr27Col11"  class="col11">Steel Panther with Madison Lune</td>
+      <td id="tr27Col12"  class="col12">Steel Panther with Madison Lune</td>
+      <td id="tr27Col13"  class="col13">Steel Panther with Madison Lune</td>
+      <td id="tr27Col14"  class="col14">Steel Panther with Madison Lune</td>
+      <td id="tr27Col15"  class="col15">Steel Panther with Madison Lune</td>
+      <td id="tr27Col16"  class="col16">Steel Panther with Madison Lune</td>
+      <td id="tr27Col17"  class="col17">Steel Panther with Madison Lune</td>
+      <td id="tr27Col18"  class="col18">Steel Panther with Madison Lune</td>
+      <td id="tr27Col19"  class="col19">Steel Panther with Madison Lune</td>
+    </tr>
+  </tbody>
+</table>
+
+<script> 
+  "use strict";
+  var hiddenCount = 10;
+//jdmc
+
+var us = localStorage.ourTableIdxId;
+       console.log("ourTableIdxId as us " + us );
+       var sTrxxCol5  = "tr"+us+"Col5";
+       console.log("sTrxxCol5 as sTrxxCol5 " + sTrxxCol5  );
+       var sTrxxCol4  = "tr"+us+"Col4";
+       console.log("sTrxxCol4 as sTrxxCol4 " + sTrxxCol4  );
+       var sTrId      = "tr"+us;
+       console.log("sTrId as sTrId " + sTrId   );
+       var sColId     = "tr"+us;
+       console.log("sColId as sColId " + sColId    );
+       var sMyResultxx = "myResult_tr"+us;
+       console.log("sMyResultxx as sMyResultxx " + sMyResultxx    );
+
+
+  var ShowRow = function (argTrId, argColId)
+    {
+    var thisRow     = document.getElementById(argTrId);
+    var thisColElem = document.getElementById(argColId);
+    var thisValue   = thisColElem.innerHTML;
+    var testing     = document.getElementById(argTrId).getElementsByTagName('td');
+    
+    // we want col4 as it has a special set id as myTestId aka tr26Col4
+    // aka array element [3] of our <td>
+    
+    //console.log( "this value is " + thisValue);
+    if  (testing[3] != sTrxxCol4)
+        {
+        console.log( "testing[3] is " + testing[3] + "...myTestId = " + sTrxxCol4); //tr26Col4);
+        ; //do nothing, not our row, hence no evaluation over
+        }
+        else if (   (localStorage.myInfoShown) 
+                &&  (localStorage.myInfoShown == 'false') 
+        ) //Override what the canned table states for this, Us, as the user for our row entries
+        {
+        console.log( "possible override to False; setting false");
+        thisValue = 'false';
+        }
+        else if (   (localStorage.myInfoShown) 
+                &&  (localStorage.myInfoShown == 'true') 
+        ) //Override what the canned table states for this, Us, as the user for our row entries
+        {
+        thisValue = 'true';
+        console.log( "possible override to True; setting true");
+        }
+        else
+        {
+        console.log( "Unexpected !!!!!!!!!, but no actions");  
+        }
+    
+    if  (thisValue == "true")
+        {
+        thisRow.style.display = 'table-row';
+        }
+        else
+        {
+        thisRow.style.display = 'none';
+        hiddenCount += 1;  
+ //       console.log( "hiddenCount is " + hiddenCount);
+        }
+    }  //close ShowRow func
+  
+
+  var ToggleRow = function (argTrId, argColId) 
+    {
+    var myRow     = document.getElementById(argTrId);
+    var myColElem = document.getElementById(argColId);
+    var myToggle  = myColElem.innerHTML;
+  
+    console.log( "Toggle Initial Column value is " + myToggle);
+    console.log( "Toggle Initial lStorage value is " + localStorage.myInfoShown);
+    if ( (   (localStorage.myInfoShown) 
+         &&  (localStorage.myInfoShown == 'true')
+         )
+       )   
+       {
+       myToggle = "false";
+       }
+    else if ( (   (localStorage.myInfoShown) 
+              &&  (localStorage.myInfoShown == 'false')
+              )
+            || (myToggle == "false")
+            )   
+           {
+           myToggle = "true";
+           }
+    else { 
+         console.log(" Really unexpected");
+         if (myToggle == "true")
+            {
+            console.log("Using myRow, myToggle-> true, setting false");
+            myToggle = "false";
+            }
+         else if (myToggle == "false")
+            {
+            console.log("Using myRow, myToggle-> false, setting true" );
+            myToggle = "true";
+            }
+         else
+            {
+            console.log("Bad logic, guessing, setting to expose")
+            myToggle = "true";
+            }
+         }
+    localStorage.myInfoShown = myToggle;
+    console.log( "Final updated Toggle value is " + myToggle);
+    console.log( "Final Saved in lStorage, and myColElem innerHTML ... back push?");
+    myColElem.innerHTML = myToggle;
+    if  (myToggle == "true")
+        {
+        myRow.style.display = 'table-row';
+        }
+        else
+        {
+        myRow.style.display = 'none';
+        }
+     } //end ToggleRow Func
+
+</script>  
+
+<script> 
+//maybe pass in default/Invite img name, so they can be changed.
+  "use strict";
+
+  var StringAppendHTML = "";
+  function UpdateProfilePtr(arg1Id) {
+    var $myTag = function(arg1Id) {return document.getElementById(arg1Id);}
+    
+//$('html, body').animate({scrollTop: 200}, 'slow');    
+
+    StringAppendHTML = "<a name='jump2here' id='cf' href='#jump2here' onclick='var ourClickRef = (function() {return (localStorage.refToUseThisInputBtn);} );  var ourSimBtn = window.parent; ourSimBtn.focus(); ourSimBtn.postMessage(&apos;startRequest&apos;, &apos;*&apos;);  '> ";
+//I may need to capture an error on the postMessage (embed)
+
+    //end onclick, end open a-tag, below is adding more string-context
+    StringAppendHTML += "<p id='InviteText' style='line-height: 1.1; margin-bottom: -134px; background-color: Transparent;border: none;'><br>          16 or older?<br>Upload a photo<br>of yourself. ...<br>Click Here<br>to Start</p>";
+    StringAppendHTML += "<img class='thumbnail top' src='images/pic1.jpg' alt='Your missing picture; Please upload new version' style='border: 3px solid rgba(207, 27, 27, 1.0);'       title='Click to Upload a Photo to share with the DfG-RB Group.'/> </a> ";   //end img tag    //end string composition 
+
+    document.getElementById(sTrxxCol4).innerHTML = "";
+    document.getElementById(sTrxxCol4).innerHTML = StringAppendHTML;
+    console.log("set innerHTML from Func");
+  };            //end function and body
+
+
+{
+  function receiveMessage(event)
+    {
+    console.log(event.data);
+    if (event.data == "toggleMe")
+       {
+       console.log(" toggle change seen, calling ToggleRow");
+       // Example : ToggleRow("myResult_tr27", "tr27Col5");
+       console.log("myResult_ , trxxCol5  = " + sMyResultxx + "," + sTrxxCol5);
+
+       ToggleRow(sMyResultxx, sTrxxCol5); 
+       }
+    else if (event.data == 'updateImage')
+       {
+       console.log(event.data); 
+
+    document.getElementById(sTrxxCol4).innerHTML = "";
+    document.getElementById(sTrxxCol4).innerHTML = '<img class="thumbnail" id="mee" src="" alt="image of you" title="This is you from your upload." />' ;
+    document.getElementById("mee").setAttribute("src", localStorage.thisImageChoice);
+       console.log('new image from update message'); 
+       }
+    else 
+       {
+       console.log('new message received of kind' + event.data);
+       } 
+    } //end receiveMessage func
+
+
+
+    var myResult = document.getElementById(sTrxxCol4);
+    onload = function() {
+    
+    if (isNaN(localStorage.exposeHideTgl) ) 
+		    { //Takes care of the case where userRevisits NaN
+		    localStorage.exposeHideTgl = 0;
+		    }
+
+window.addEventListener("message", receiveMessage, false); 
+UpdateProfilePtr(myResult);
+
+ShowRow("myResult_tr1",  "tr1Col5");
+ShowRow("myResult_tr2",  "tr2Col5");
+ShowRow("myResult_tr3",  "tr3Col5");
+ShowRow("myResult_tr4",  "tr4Col5");
+ShowRow("myResult_tr5",  "tr5Col5");
+ShowRow("myResult_tr6",  "tr6Col5");
+ShowRow("myResult_tr7",  "tr7Col5");
+ShowRow("myResult_tr8",  "tr8Col5");
+ShowRow("myResult_tr9",  "tr9Col5");
+ShowRow("myResult_tr10", "tr10Col5");
+ShowRow("myResult_tr11", "tr11Col5");
+ShowRow("myResult_tr12", "tr12Col5");
+ShowRow("myResult_tr13", "tr13Col5");
+ShowRow("myResult_tr14", "tr14Col5");
+ShowRow("myResult_tr15", "tr15Col5");
+ShowRow("myResult_tr16", "tr16Col5");
+ShowRow("myResult_tr17", "tr17Col5");
+ShowRow("myResult_tr18", "tr18Col5");
+ShowRow("myResult_tr19", "tr19Col5");
+ShowRow("myResult_tr20", "tr20Col5");
+ShowRow("myResult_tr21", "tr21Col5");
+ShowRow("myResult_tr22", "tr22Col5");
+ShowRow("myResult_tr23", "tr23Col5");
+ShowRow("myResult_tr24", "tr24Col5");
+ShowRow("myResult_tr25", "tr25Col5");
+ShowRow("myResult_tr26", "tr26Col5");
+ShowRow("myResult_tr27", "tr27Col5");
+
+//ShowRow("myResult_tr28", "tr28Col5");
+//ToggleRow("myResult_tr27", "tr27Col5");
+
+console.log( "hiddenCount is " + hiddenCount);
+var tableRevision = document.getElementById("revisionDate").innerHTML;
+document.getElementById("inject1").innerHTML = hiddenCount;
+document.getElementById("inject2").innerHTML = hiddenCount;
+document.getElementById("inject3").innerHTML = hiddenCount;
+document.getElementById("inject1a").innerHTML = tableRevision;
+document.getElementById("inject2a").innerHTML = tableRevision;
+document.getElementById("inject3a").innerHTML = tableRevision;
+
+//-----------------------------------------
+function getMyMatchPosition(){
+var myEmailString = localStorage.myEmailIdPreserved; 
+var anchorArray = [];
+var scan = 0;
+myEmailString = (myEmailString).trim();
+console.log("inside getMyMatchPosition");
+/* validate localStorage values as being good enough to use
+  if (  (localStorage.myEmailIdPreserved) 
+     && (localStorage.myEmailIdPreserved == valid) 
+     )
+    {    
+    myEmailString = localStorage.myEmailIdPreserved; 
+    }
+ 
+  if (  (localStorage.ourTableIdxId) && (localStorage.ourTableIdxId == myEmailString) //then already good;
+  ---------------------------------
+*/
+  {
+
+     //list of our anchors of col3, go straight to the <a elements
+     anchorArray = document.getElementsByClassName('aCol3'); 
+     console.log(' array length/size/num-of-elements  anchorArray = ' + anchorArray.length); 
+     var snippetInnerHtml='';
+     for (var idx=0; idx < anchorArray.length; idx++)
+         {
+         snippetInnerHtml = anchorArray[idx].innerHTML;
+         snippetInnerHtml= (snippetInnerHtml).trim() 
+            
+         if (snippetInnerHtml == myEmailString) //localStorage.myEmailIdPreserved
+            {
+            console.log(" email/table entry match found = " + idx);
+            console.log("innerHTML =  " + snippetInnerHtml + "idx = " + idx); 
+            console.log("myEmail =  " + myEmailString + "idx = " + idx); 
+            localStorage.ourTableIdxId   = idx + 1;   
+            sessionStorage.ourTableIdxId = idx + 1;  
+            scan = idx;
+            }
+         } //end for loop
+
+      if (scan >= 1)
+      { 
+      console.log(" email/table LAST Match found = " + scan); 
+      }
+      else
+      {
+      console.log(" FAILED to find a email/table entry match, scan = " + scan + "idx = " + idx); 
+      localStorage.ourTableIdxId = "";   
+      sessionStorage.ourTableIdxId = "";
+      // maybe this is a remove / DropMe
+      //use old email
+
+
+      }
+  }  //end loop code block staring with var ob
+}   // end func getMyMatchPosition
+//make our tags/ids based on id match
+
+//------------------------------------
+    window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#jump2listing";
+    console.log("saw the onload event. myResult");
+    getMyMatchPosition();
+//    if (   (localStorage.ourTableIdxId)
+//       &&  (localStorage.ourTableIdxId == email )
+/*
+       var us = localStorage.ourTableIdxId;
+       console.log("ourTableIdxId as us " + us );
+       var sTrxxCol5  = "tr"+us+"Col5";
+       console.log("sTrxxCol5 as sTrxxCol5 " + sTrxxCol5  );
+       var sTrxxCol4  = "tr"+us+"Col4";
+       console.log("sTrxxCol4 as sTrxxCol4 " + sTrxxCol4  );
+       var sTrId      = "tr"+us;
+       console.log("sTrId as sTrId " + sTrId   );
+       var sColId     = "tr"+us;
+       console.log("sColId as sColId " + sColId    );
+       var sMyResultxx = "myResult_"+us;
+       console.log("sMyResultxx as sMyResultxx " + sMyResultxx    );
+    */
+    } //end onLoad func
+  } //end of block
+  
+</script>
+
+<style>
+#InviteText {
+  text-align: center; 
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0px;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  color:  rgba(226, 9, 9, 1.0);
+  }
+
+#cf img.top:hover {
+    cursor:pointer;
+    }
+#cf p:hover {
+    cursor:pointer;
+    }
+
+
+#cf {
+  position:relative;
+/*
+  height:186px;
+  width:140px;
+*/
+  margin:0 auto;
+}
+
+#cf img {
+/*  position:absolute;
+  left:0;
+*/
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cfFadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cfFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+
+#cf img.bottom:hover {
+  opacity:0;
+}
+</style>
+
+<p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plus-- (<span id="inject2"> </span> Hidden Id's previously)</p>
+<p>(Last Updated <span id="inject2a"></span>; always subject to change. 
+<br>Copyright © 2020 Days For Girls, Rancho Bernardo, Ca)</p>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/dfg-flower.png"/>
+<meta charset="UTF-8">
+
+<link href="css/bootstrap-4.3.1.css"  rel="stylesheet" type="text/css" />
+
+<link href="css/style-group-list.css" rel="stylesheet" type="text/css">
+<style> 
+  div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -33px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgb(248,198,63);
+  padding-left: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+}
+span.sticky-column {
+  display: inline-block;
+}
+
+img.thumbnail {
+  margin-left: 4px;
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 8px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/*
+#myResult_tr {
+  display: table-row;
+}
+*/
+
+/*
+tr.result_tr {
+  display: none;
+}
+*/
+/* Add a hover effect (blue shadow) */
+img.thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.8);
+  /* transform: scaleXY(5); */
+}
+
+.fixed_header {
+width: 800px; 
+margin: 0 auto 0 auto;
+display: block;
+}
+td.col1 {
+	text-align: left;
+	width: 18%;
+	background-color:rgba(235, 233, 180, 0.9);
+	padding: 3px;
+	margin-top: 10px;
+	border-bottom: thin solid #3004C4;
+}
+td.col2 {
+
+}
+td.col3 {
+  text-align: left;
+	width: 18%;
+	background-color:rgba(235, 233, 180, 0.9);
+	padding: 3px;
+	margin-top: 10px;
+	border-bottom: thin solid #3004C4;
+  }
+td.col4 {
+
+}
+
+td.col5 {
+ display: none; 
+}
+td.col6 {
+ display: none; 
+}
+td.col7 {
+ display: none; 
+}
+td.col8 {
+ display: none; 
+}
+td.col9 {
+ display: none; 
+}
+td.col10 {
+ display: none; 
+}
+td.col11 {
+ display: none; 
+}
+td.col12 {
+ display: none; 
+}
+td.col13 {
+ display: none; 
+}
+td.col14 {
+ display: none; 
+}
+td.col15 {
+ display: none; 
+}
+td.col16 {
+ display: none; 
+}
+td.col17 {
+ display: none; 
+}
+td.col18 {
+ display: none; 
+}
+td.col19 {
+ display: none; 
+}
+
+.imgFloatCenter
+{
+padding: 5px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.img-zPlane {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 6;
+}
+
+
+</style>
+<!--
+.hidetext { -webkit-text-security: disc; /* Default */ }
+.hidetext { -webkit-text-security: none; }
+.hidetext { -webkit-text-security: circle; }
+.hidetext { -webkit-text-security: square; }
+
+table>
+   <tr id="theTargetRow" data-id="2">
+      <td>My Name</td>
+   </tr>
+</table>
+
+and can be retrieved by
+
+<script>
+"use strict";
+$(document).ready( function() {
+   $('#theTargetRow').data('id')   // 2
+
+})
+</script>
+
+-->
+<!--
+<script>
+"use strict";
+var result_style = document.getElementById('myResult_tr').style;
+result_style.display =  (parseInt(localStorage.exposeHideTgl) % 2) ? 'none' : 'table-row';
+</script>
+-->
+
+<title>DfG RB Preview Image | Group Info </title>
+</head>
+
+<body> <!-- align="center" -->
+<p style="font-size: 4px; background-color: #FFF;">&nbsp;</p>
+
+<div class="sticky" >
+<span>Preview Image window (below) </span>
+</div>
+
+<!-- <div display="inline-block"> -->
+<div>
+<img class="thumbnail" class ="img-zPlane" src="images/JohnMc.jpg" alt="&nbsp;&nbsp;&nbsp;&nbsp;  !! -- no file selected or image not found, try selection again">
+</div>
+
+</body>
+</html>

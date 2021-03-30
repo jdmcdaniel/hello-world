@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="images/dfg-flower.png"/>
+	
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/style.css"            rel="stylesheet" type="text/css" />
+<link href="css/iframe.css"           rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-4.3.1.css"  rel="stylesheet" type="text/css" />
+
+<link href="css/rb-gdpr-policy.css"         rel="stylesheet" type="text/css" />
+
+<!-- <link href="myjsjwt/a-cssjs.css"  rel="stylesheet" type="text/css" /> -->
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+
+<script src="http://use.edgefonts.net/baumans:n4:default.js" type="text/javascript"></script>
+
+
+
+<meta name="description" content="Rancho Bernardo Local Community Participation in Days For Girls Activities">
+<meta name="keywords" content="San-Diego North County Community-Participation, Days-For-Girls, DfG-Volunteer Participation-Events Donate ">
+	
+<meta name="geo.placename" content="Days For Girls, 11111 Rancho Bernardo Rd, San Diego CA, 92127, USA"/>  
+<meta name="geo.region"   content="US-California"/>	
+<meta name="geo.position" content="33.023228,-117.089529"/>
+<meta name="ICBM"         content="33.023228,-117.089529"/>
+
+
+
+<title>DfG Rancho Bernardo | GDPR/CCPA Policy </title>
+</head>
+
+<body>
+
+	<header>
+	<section>
+	<div itemscope itemtype="http://schema.org/LocalBusiness">
+	<h1 id="home-logo" itemprop="name">Days For Girls, San Diego North County, <br><em><u>Rancho Bernardo</u></em></h1>
+	</div>
+	
+	<section style="float: left;">
+		<a href="https://www.daysforgirls.org/" target="_blank">
+		<img src="images/dgf-top-logo.png" alt="Logo, Days For Girls, Small Flower Pattern" width="240" height="115"  class="Branding Flower box-shadow">
+		</a> 
+	</section>
+		
+		<!-- box-shadow: 2px 2px 13px #000; was rb-logo7 -->
+	<section id="rb-logo" style="float: right; margin-right: 30px; ">
+	
+	<img src="images/rancho-bernardo-logo4.jpg" alt="Logo, Days For Girls, Rancho Bernardo Stamp" width="125" height="130" class="Branding RB" > 
+	
+	</section>
+	
+	<div itemscope itemtype="http://schema.org/PostalAddress">
+	
+	<p><span itemprop="streetAddress">11111 Rancho Bernardo Rd</span><br>
+	<span itemprop="addressLocality">San Diego</span>
+	<span itemprop="addressRegion">CA</span>
+	<span itemprop="postalCode">92127</span><br>
+	Call: <a href="tel://7607441150" 
+	itemprop="telephone"> 760-744-1150</a>
+	&nbsp;Or: <a href="sms://7607441150">...Text<br></a>
+	<!--  U+1F5E9 texting symbols -->
+	
+	Email: <a href="mailto:rene-mcdaniel@dfg-rancho-bernardo.com?bcc=emailbcc@dfg-rancho-bernardo.com?subject=Making%20Contact&body=Hi%20Rene,%20I'm%20interested%20in:" 
+	itemprop="email">rene-mcdaniel@dfg-rancho-bernardo.com</a> </p>
+	<p style="font-size: 0.10em;">
+	&nbsp;</p>	
+	</div>
+	
+	</section>
+	
+	<section>
+		
+		<h2-dfg><em><strong>" Turning Periods Into Pathways "</strong></em></h2-dfg>
+	
+	<!-- dfg-int'l color-23:= F19622, ours=f89607  -->	
+	
+	</section>
+	</header>
+	
+	<!-- Qualifying the user, not novice; then expose more, count visits by document ready function (similar to onLoad), use localStorage to save intermediate results across multiple pages and multiple visits. Only install this ready count on the top/first-5 menu items pages. count is used for when to expose front-anchors. this count is per user/device as the data is storage locally on their device -->
+	<script>
+		"use strict";
+		$(document).ready(function() {
+			if (isNaN(localStorage.userRevisits) ) 
+		        { //Takes care of the case where userRevisits NaN
+				    localStorage.userRevisits = 0;
+				    }
+
+		if (localStorage.userVisits)
+				{ 
+				localStorage.userVisits = parseInt(localStorage.userVisits) + 1;
+				}
+		else
+				{
+				localStorage.userVisits = 1;
+				localStorage.userRevisits = 0;
+				}
+		if (sessionStorage.userVisits)
+				{ 
+				sessionStorage.userVisits = parseInt(sessionStorage.userVisits) + 1;
+				}
+		else
+				{
+				sessionStorage.userVisits = 1;
+				localStorage.userRevisits = parseInt(localStorage.userRevisits) + 1 ;
+				}
+
+		// this need to be a string function check
+		if ( !(localStorage.userHasScrolled2) ) 
+		        { //Takes care of the case where userHasScrolled2 NaN
+						localStorage.userHasScrolled2 = 'false';
+				    }
+		else if ( ! ((localStorage.userHasScrolled2) == 'true') )			
+		        { //if we make this a timestamp value; change the logic
+						localStorage.userHasScrolled2 = 'false';
+				    }
+			$(window).on('scroll', function() {
+				localStorage.userHasScrolled2 = 'true';		  
+				$(window).off('scroll');	  //stop future triggers
+						 } );
+		} );
+		</script>
+	
+	<section id="front-anchors">
+		<a name="jump2gdpr-policy" style="margin-top: -3px;"></a>
+	
+	<ax1></ax1> <!-- placeholder to be filled in by script -->
+	
+	<!-- Since document ready occurs at the load end, this condition won't trigger until the 10th entry, 1 delay for being at the end, 1 delay waiting for next repaint to occur, and 1 for subtracting the 1st session count; ie visits=10, revisits=9 -->
+	<script>
+	"use strict";
+	if (   localStorage.getItem("subscribed") == "checked" ||  localStorage.getItem("signedUp") == "checked" || (parseInt(localStorage.getItem("userRevisits") ) >= "8"  ) ) 
+	 {
+		var a = `<a>	 
+	<!-- Location Map -->
+		<a href="dfg-rb-map-view.html#jump2map"><strong><em>DfG RB Map</em></strong></a>&nbsp;&nbsp;
+	<!-- Calendar -->
+		<a href="dfg-rb-calendar-actual.html#jump2calendar"><strong><em>RB Calendar</em></strong></a>&nbsp;&nbsp;
+	<!-- Info -->
+		<a href="dfg-rb-local.html#jump2info"><strong><em>RB Info</em></strong></a>&nbsp;&nbsp;
+	
+		<!-- RB Contacts, conditional based on sign up and cookies -->
+		<p1 style= "font-size: 1.4em;">  <br></p1>
+		
+		<\a>`;
+	$('ax1').append(a);
+	 }
+	</script>
+	<!-- placeholder to be filled in by script below; check, then; expose restricted page link for the members who signed up/subscribed -->
+		<axx></axx>
+		<script>
+		"use strict";
+		if (localStorage.getItem("subscribed") == "checked" ||  localStorage.getItem("signedUp") == "checked" )
+		{
+		var a = `<a>
+		<a href="dfg-rb-group-info.html#jump2group-info"><strong><em>Group-Info&nbsp;&nbsp;&nbsp;&nbsp;</em></strong></a>
+		
+		<\a>`;
+		$('axx').append(a);
+		}
+		</script>
+	
+	
+	<!-- obfuscates -->
+	<!-- from above; first visit; equals else equals show nothing for front-anchors -->
+	</section>
+	
+	<div-tabs class="nav-tabs bkgbreadcrumb">
+	
+		 <a href="dfg-rb-index.html"          >Home</a>
+		 <a href="dfg-rb-sign-up.html"        >Join</a>	
+		 <a href="dfg-rb-stories.html"        >Stories</a>
+		 <a href="dfg-rb-share.html"          >Share</a>
+		 <a href="dfg-rb-newsletter.html"     >News</a>
+		 
+	</div-tabs>	
+	
+	
+		<div>
+			<section id="body-text-headings">
+		
+				<h1 style="margin-left: 30px; margin-right: 30px; margin-bottom: -10px; color: rgb(15, 10, 10)">
+					<img src="images/dfg-flower.png" alt="Logo, Days For Girls, Small Flower" width="30" height="35" style="padding-bottom: 5px;">
+				<em style="margin-left: -12px;">Rancho Bernardo...Policies</em>
+				<em style="font-size: 18px">-- Use / Rights Policy</em></h1>
+				<grid-line>_______________________________________________________________________________________</grid-line><br>
+	
+				<h2 style="margin-left: 30px; margin-right: 30px; display: inline-block">
+			
+				<span style="background-color:rgba(250,159,18, 0.50)">
+				<em>Consumer Protection DfG-RB</em><em style= "font-size: 20px;">...GDPR / CCPA Policy </em></span>&nbsp;&nbsp;<u style= "font-size: 24px;"></u>
+			  <!-- &nbsp;&nbsp; above, spaces the button apart from the line text -->
+				<!--
+				<input name="print-button" type="button" class="noClear2" id="print-requested"   value="Print" onclick="window.print();return false;" />&nbsp;
+				
+				<input name="download-button" type="button"  class="noClear2" id="download-requested"   value="Download" download="" onclick="window.download(href='dfg-rb-gdpr-ccpa-policy.html' download='');return false;">&nbsp;
+					-->
+				</h2>
+<p style="margin-right: 30px; display: inline-block">
+				&nbsp;&nbsp;&nbsp;
+<a class="btn btn-colors btn-sm" role="button" href="dfg-rb-gdpr-ccpa-policy.html"  onclick="localStorage.setItem('gdprPrint', 'checked'); window.print();return false;">Print</a>
+				&nbsp;
+<a class="btn btn-colors btn-sm" role="button" href="dfg-rb-gdpr-ccpa-policy.html" download="" onclick="localStorage.setItem('gdprDownload', 'checked')">Download</a> &nbsp;&nbsp;<br>
+
+
+<h2 style="margin-left: 30px; margin-right: 30px; ">
+<u style= "font-size: 20px;">(Version: 06-25-2020)</u></h2>
+
+</section>
+<section id="policy-formats">
+<p style="text-align: center">(Version: 06-25-2020)</p>
+<h2 style="text-align: center"><em>DfG-RB GDPR / CCPA Policy, Consumer protection, a.k.a. "Use / Rights Policy" </em></h2>
+
+<p>Days for Girls Rancho Bernardo (DfG-RB) is a local chapter of the greater Days for Girls International (DfGI).
+Both DfG-RB and DfGI value the privacy of our supporters' personal information and is committed to protecting it.
+This policy is for DfG-RB relative to the legislation for GDPR and CCPA.  There are 2 other policies, privacy policies which are and umbrella to this GDPR / CCPA Policy, they are the "Days for Girls International" (DfGI) Privacy Policy as: <br>
+linked here(1):&nbsp;&nbsp; 
+<a href="https://www.daysforgirls.org/dfgprivacy" target="_blank" onclick="localStorage.setItem('readpolicy9', 'clicked');"><strong><em>DfGI Privacy Policy</em></strong> </a>
+<br>
+linked here(2):&nbsp;&nbsp; 
+<a href="dfg-rb-privacy-policy.html" target="_blank" onclick="localStorage.setItem('readpolicy10', 'clicked');"><strong><em>DfG-RB Privacy Policy</em></strong> </a>
+<br>
+&nbsp;&nbsp;</p>
+<p>
+This GDPR / CCPA Policy is specific to DfG-RB, and its related implementation of website and electronic data collection, storage, processing, deletion/removal, destruction, user-rights, and user-protections. (most specifically User Data).
+DfG-RB collects, uses, processes, stores the following data items which are of the personal User Data:
+First Name, Last Name, Email Address, Phone Number, and several choices of personal interest and connections.
+Additionally, DfG-RB collects an age category for each submission.
+There is no right or wrong answer value for age category, the form submission is accepted for all answers.  The idea is to get minor individuals to answer honestly; and not decline them nor force them to lie.
+Different age brackets have their own unique User Protections based on the users age and legislation.
+Not seen by the user, but also collected, is a timestamp for each submission, a full string of the entire set of attributes/items in the submission form, and a signature key which verifies the submission did originated from the DfG-RB website.
+Also collected, but not associated to any user is web browser history across our different Dfg-RB web pages (to help us better tune and adjust our web pages and the users web experience). Similarly, certain features which the user clicks or data-entries may be recorded locally (via localStorage, or IndexedDB, or Cache-Storage) in the users device/browser. This allows repeat use visits to perform better for that user, as the users device remembers some of the previous activities already accomplished. DfG-RB does not have any direct knowledge of these intermediaries. (the users computer/device/browser does...everything stays local; and not transmitted down the wire/backbone/web-system).
+
+Based on the collected data/attribute set, DfG-RB may install a small web cookie via the Users Browser on the Users Device.  All cookies will be DfG-RB, as no 3rd party cookies are used/installed. No tracers or web-beacons. DfG-RB oviscaptes (hides/scrambles/cloaks) the cookies which limits any 3rd party from scraping the cookie for data for meaning value, or making profiles of you by tracking your habits, or selling that information to 3rd parties without your consent (there's nothing of habits or data value in our cookie(s)).
+Note: Sometimes the idea of cookies generates fear, or possible mistrust, or invasion. These DfG-RB cookies are not of that type, just the inverse is true. DfG-RB would rather have the Users device store the sensitive User data, rather than open vulnerabilities on the DfG-RB side to save/shield/protect that data from being hacked. Similar to why DfG-RB doesn't directly take your donations; but rather passes that request onto a major service, DfG-RB doesn't really want your sensitive data, DfG-RB just wants to use it or verify it in a transitory manner, just leaving the data on the Users device.  The User can always view their cookie-data (or LocalStorage, IndexedDB, Cache-Storage) via their web-browser as browser-built-in function(s).
+With that being said; DfG-RB small amount (all) transacted data is encrypted across the wire, and likewise what data that is store by DfG-RB is also encrypted.
+...Protected in motion, Protected at rest when on DfG-RB machines.
+Additionally, if the User submitted a "Subscription" request, DfG-RB may install some small cookie(s) onto the users device.  The cookies help the User experience and allow "push" messages to be sent to/into the User's device, or User's Notification system, or User's Calendar system, or the User's Text messaging system. [This primary a smart phone device feature, but could also work for users desktops/tablets if they're so configured (rare) (as this requires a texting phone number or sms number) ].
+Upon "signing-up" or choosing the "subscription" (aka Joined) allows individuals access to additional protected web-pages (primarily the group contacts list). Protected pages are reserved/restricted, allowing access to individual's computers/devices whom have explicitly joined. Permission/Denial-Rejection is checked upon attempted entry, so if even coming via a search-engine link, only qualified joined individual's computers/devices are granted access.(Certain Local web-page links are revealed).<br>
+<a name="jump2sharing-notice" id="setpoint" style="margin-top: 25px;"></a>
+<u id="setPoint" style="font-size: 18px; font-weight: 800;">
+	** "Shared" / "Joined" Category:
+</u>
+<br>
+Individuals "signing-up" or choosing the "subscription" will have their names, email, and phone number shared amongst others who have also Joined ("signing-up" or choosing the "subscription") ...aka group contacts list.
+Unsubscribe:
+Also Note:On the <b>Sign-up page</b>; after the form in the lower left is the web-link to select if the individual chooses to change their information or chooses to Un-Subscribe, or be Removed. (Also available by clicking the example graphic). Choosing Un-Subscribe, or be Removed may take up to 5 days to finish processing, and get purged. &nbsp;&nbsp;</p>
+
+<h2 style="text-align: center; margin-bottom: 0px; padding-bottom: 0px"><b>Example, Form bottom on the Sign-Up/Join Page</b></h2>
+
+<div style="text-align: center" > 
+<a 	href="dfg-rb-list-update.html" target="_blank">
+<img style="margin-left: auto; margin-right: auto; width: 966px; height: 227px; border: 3px; border-color: rgb(168, 63, 63); border-style: double; display: inline-block; box-shadow: 4px 4px 10px #000;"
+src="images/unsubscribe-snippet6.png"  alt="launch new page for capture / image of where to find unsubscribe link" id="unsubscribe-link-xx" Title="example or similar image of where to find unsubscribe link (also; clickable here)"/>
+</a>
+</div>
+<p>
+<br>
+Other than the where the "Shared / Joined Catagory" mentioned <a href="#jump2sharing-notice" onclick="{ 
+	if (sessionStorage.backhighlite2 == 'true') 
+	   {
+	   (sessionStorage.backhighlite2 = 'false');
+		 $('#setPoint').css('background-color', 'rgba(1,147,230,.10)'); 
+		 }
+	else 
+	   {
+		 (sessionStorage.backhighlite2 = 'true');
+		 (localStorage.backhighlite2 = 'true');
+		 $('#setPoint').css('background-color', 'rgba(255,255,0,.50)');
+		 } 
+ }">
+<b>above,</b></a>; 
+
+DfG-RB does not share your personal information with anyone outside of the organization. All information, whether submitted online or in person, is collected via secure channels and stored in our secure databases and facilities.
+
+
+Your rights under the General Data Protection Regulation (GDPR) or CCPA:
+Under GDPR/CCPA, you have the following rights regarding DfG-RB processing of your information:
+Right to information:  You are able to ask us what data about yourself is being processed, and its rationale.
+Right to Access:  You are able to request access to your personal data.
+Right to Rectification:  You are able to ask to modify or update your personal data if the information we have provided you is inaccurate.
+Right to Erasure:  You have the right to be forgotten. You may request that we erase all of your data from our systems, even if you have given us prior consent.
+Right to Restrict Processing:  You are able to request that we do not process your data, though we are still able to store it.
+Right to Data Portability:  You are able to easily obtain a copy of your personal information stored in our machine or on paper (in a locked file cabinet), your information will be returned via a machine-readable form and plain text format.
+Right to Object:  You may object to us contacting you.
+Rights in relation to automated decision-making and profiling:  You may request that we do not include your personal data in any automated profiling or analysis that might make assumptions about you.
+
+How to raise concerns or make a complaint:
+If you would like to make a complaint, have a question or raise a concern about how we process your personal data, please contact info@daysforgirls.org. If you are not satisfied with how your complaint was dealt with, you should contact the Director of Operations at operations@daysforgirls.org.
+
+Opting Out
+All persons who join or donate to DfG-RB or DfGI, whether via regular postal mail, over the phone or through the website, will receive periodic updates from us by email. You may request to opt-out of these updates by contacting or unsubscribing.
+
+Outside Links
+This site contains hypertext links to other sites (typically social-media sharing sites and "Days For Girls International"). DfG-RB is not responsible for the privacy policies, practices or content of such websites or social media page platform posts/sharing connections, comments, opinions. Likewise, if you accessed our website from a third party side, we are not responsible for the privacy policies and practices of that side and recommend that you check their policy should you have any questions.
+
+</p>
+</section>
+<section id="body-text-tag">
+	<h2>You too, Can volunteer, You too, Can make a difference.</h2>
+	<p style="margin-left: 30px; margin-right: 30px;"><strong>Take the step, connect today: &nbsp;</strong>
+	<a href="dfg-rb-sign-up.html"><strong><em>RB Sign-Up</em></strong></a>&nbsp;&nbsp; OR:&nbsp;&nbsp;<a href="mailto://:rene-mcdaniel@dfg-rancho-bernardo.com"><strong><em>email:&nbsp;rene-mcdaniel@dfg-rancho-bernardo.com</em></strong></a></p>
+	</section>
+	</div>
+	
+	<section id="bottom-banner2">
+		<p class="backgroundcolor1"> <strong><em>Support Days For Girls</em></strong></p>
+	</section>
+		
+	<section id="bottom-banner">
+		<p class="backgroundcolor2" style="width: 34.8%"><strong><em>Every Girl, Everywhere, <br>Period.</em></strong></p>
+		<p class="backgroundcolor3" style="width: 32.1%"><img src="images/dfg-flower-sm-logo.png" alt="Logo, Days For Girls, Small Flower" width="38" height="29">MAKE AN IMPACT<br> <strong><em>Join In!</em></strong></p>
+		
+		<p class="backgroundcolor2" style="width: 33.1%"><strong><em>Turning Periods Into</em></strong><br><strong><em>Pathways</em></strong></p>
+	</section>
+		
+				
+	<footer>
+		<p>Copyright © 2020  <!-- <a href="https://dfg-rancho-bernardo.com"> --><a href="dfg-rb-index.html"><strong><em>Days For Girls, Rancho Bernardo, Ca 92127</em></strong></a>&nbsp;&nbsp;<a href="mailto://:rene-mcdaniel@dfg-rancho-bernardo.com"><strong><em>email:&nbsp;rene-mcdaniel@dfg-rancho-bernardo.com</em></strong></a></p>
+	<p><strong><em>Share Us on:</em></strong> 	
+		
+	<!-- Basic Share Links -->
+	<!-- Twitter (url, text, @mention) -->
+	<a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>">Twitter
+	</a>&nbsp;
+	
+	<!-- Facebook (url) -->
+	<a href="https://www.facebook.com/sharer/sharer.php?u=<URL>">
+			Facebook
+	</a>&nbsp;
+	
+	<!-- Instagram (subject, body) -->
+	<a href="https://www.facebook.com/sharer/sharer.php?u=<URL>">
+			Instagram
+	</a>&nbsp;	
+		
+	<!-- Email (subject, body) -->
+	<a href="mailto:?subject=<SUBJECT>&body=<BODY>">
+			Email
+	</a>&nbsp;
+	</p>
+	<p>&nbsp;</p>
+	<p><strong><em>More:&nbsp;&nbsp;</em></strong> 
+	<!-- Donate -->
+		<a href="https://donate.daysforgirls.org/give/136291/#!/donation/checkout/" target="_blank"><strong><em>Donate</em></strong></a>&nbsp;&nbsp;
+	
+	<!-- DfG Org -->
+		<a href="https://www.daysforgirls.org/" target="_blank"><strong><em>Days For Girls, Int'l</em></strong> </a>&nbsp;&nbsp;
+	<!-- Sitemap -->
+		<a href="dfg-rb-sitemap.html">
+			<strong><em>Sitemap</em></strong></a>&nbsp;&nbsp;
+	<!-- Location Map -->
+		<a href="dfg-rb-map-view.html"><strong><em>DfG RB Map</em></strong></a>&nbsp;&nbsp;
+	<!-- Calendar -->
+		<a href="dfg-rb-calendar-actual.html"><strong><em>RB Calendar</em></strong></a>&nbsp;&nbsp;
+	<!-- Sign-Up -->
+		<a href="dfg-rb-sign-up.html"><strong><em>RB Sign-Up</em></strong></a>&nbsp;&nbsp;
+			
+	</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>	
+		
+	</footer>
+	
+	<script src="myjsjwt/login.js">      </script>
+	<script src="myjsjwt/consent.js">    </script>
+	<script src="myjsjwt/app.js">        </script>
+	<script src="myjsjwt/manifest.js">  </script>
+	<script src="myjsjwt/manifest.json"> </script>
+	<script src="myjsjwt/webworkers.js"> </script>
+	<script src="myjsjwt/webstorage.js"> </script>
+	<script src="myjsjwt/indexdb.js">    </script>
+	
+	<script src="myjsjwt/private.js"> </script>
+	<script src="myjsjwt/pre-dom.js"> </script>
+	<script src="myjsjwt/previous.js"></script>
+	<script src="myjsjwt/sign.js">    </script>
+	<script src="myjsjwt/state.js">   </script>
+	<script src="myjsjwt/unique.js">  </script>
+	<script src="myjsjwt/web-supp.js"></script>
+	<script src="myjsjwt/web-util.js"></script>
+	<script src="myjsjwt/data.js">    </script>
+</body>
+	</html>
